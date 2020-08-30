@@ -13,6 +13,9 @@
 		B4275BBA24FB924E00739741 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4275BB924FB924E00739741 /* Preview Assets.xcassets */; };
 		B4275BC524FB924E00739741 /* PowdermillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BC424FB924E00739741 /* PowdermillsTests.swift */; };
 		B4275BD024FB924E00739741 /* PowdermillsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BCF24FB924E00739741 /* PowdermillsUITests.swift */; };
+		B4275BDF24FB958800739741 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BDE24FB958800739741 /* HomeView.swift */; };
+		B482B7F524FB9A4500256E0F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482B7F424FB9A4500256E0F /* Colors.swift */; };
+		B482B7F724FB9E6D00256E0F /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482B7F624FB9E6D00256E0F /* HomeButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		B4275BCB24FB924E00739741 /* PowdermillsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowdermillsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4275BCF24FB924E00739741 /* PowdermillsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowdermillsUITests.swift; sourceTree = "<group>"; };
 		B4275BD124FB924E00739741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4275BDE24FB958800739741 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B482B7F424FB9A4500256E0F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B482B7F624FB9E6D00256E0F /* HomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +101,13 @@
 		B4275BB124FB924D00739741 /* Powdermills */ = {
 			isa = PBXGroup;
 			children = (
+				B4275BDD24FB957700739741 /* Home */,
 				B4275BB224FB924D00739741 /* PowdermillsApp.swift */,
 				B4275BB424FB924D00739741 /* ContentView.swift */,
 				B4275BB624FB924E00739741 /* Assets.xcassets */,
 				B4275BBB24FB924E00739741 /* Info.plist */,
 				B4275BB824FB924E00739741 /* Preview Content */,
+				B482B7F424FB9A4500256E0F /* Colors.swift */,
 			);
 			path = Powdermills;
 			sourceTree = "<group>";
@@ -128,6 +136,15 @@
 				B4275BD124FB924E00739741 /* Info.plist */,
 			);
 			path = PowdermillsUITests;
+			sourceTree = "<group>";
+		};
+		B4275BDD24FB957700739741 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B4275BDE24FB958800739741 /* HomeView.swift */,
+				B482B7F624FB9E6D00256E0F /* HomeButtonView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4275BDF24FB958800739741 /* HomeView.swift in Sources */,
+				B482B7F524FB9A4500256E0F /* Colors.swift in Sources */,
+				B482B7F724FB9E6D00256E0F /* HomeButtonView.swift in Sources */,
 				B4275BB524FB924D00739741 /* ContentView.swift in Sources */,
 				B4275BB324FB924D00739741 /* PowdermillsApp.swift in Sources */,
 			);
