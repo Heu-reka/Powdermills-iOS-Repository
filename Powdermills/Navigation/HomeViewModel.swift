@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 enum HomeState {
 	case list
@@ -22,11 +23,20 @@ enum HomeState {
 		case .map:
 			return "list.dash"
 		}
-		
+	}
+	
+	func modeTitle() -> String {
+		switch self {
+		case .list:
+			return "Building List"
+		case .map:
+			return "Park Map"
+		}
 	}
 }
 
-class HomeViewModel {
-	var state: HomeState = .list
+class HomeViewModel: ObservableObject {
+	var objectWillChange = PassthroughSubject<Void, Never>()
+	@Published var state: HomeState = .list
 	var listViewModel: BuildingListViewModel = BuildingListViewModel()
 }

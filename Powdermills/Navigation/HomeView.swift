@@ -8,21 +8,34 @@
 import SwiftUI
 
 struct HomeView: View {
-	var viewModel = HomeViewModel()
+	@ObservedObject var viewModel = HomeViewModel()
 	
 	var body: some View {
-		NavigationView {
+		vstackMode
+	}
+	
+	var vstackMode: some View {
+		VStack {
+			content
+			.navigationBarTitle(viewModel.state.modeTitle(), displayMode: .inline)
+			.navigationBarItems(trailing: modeButton)
+		}
+	}
+	
+	var content: some View {
+		Group {
 			switch viewModel.state {
 			case .list:
 				BuildingListView(viewModel: viewModel.listViewModel)
 			case .map:
 				Text("Map coming soon!")
 			}
-		}.navigationBarItems(trailing: modeButton)
+		}
 	}
 	
 	var modeButton: some View {
 		Button(action: {
+			viewModel.objectWillChange.send()
 			viewModel.state.toggle()
 		}) {
 			Image(systemName: viewModel.state.buttonImage())

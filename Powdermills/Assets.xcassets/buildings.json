@@ -5,7 +5,7 @@
 		"short": "This is the first test building",
 		"history": "It was made up in 2020",
 		"function": "It's a placeholer",
-		"funFacts" : "",
+		"funFacts" : "It's not a real building",
 		"longHistory": "It was made up on Sunday September 13th, 2020",
 		"imageName": "989484_5e3ee76a"
 	},
@@ -15,7 +15,47 @@
 		"short": "This is another test building",
 		"history": "It was made up in 2020",
 		"function": "It's a different placeholer",
-		"funFacts" : "",
+		"funFacts" : "It's not a real building",
+		"longHistory": "It was also made up on Sunday September 13th, 2020",
+		"imageName": "photo1jpg"
+	},
+	{
+		"number": 3,
+		"name": "The first one",
+		"short": "This is the first test building",
+		"history": "It was made up in 2020",
+		"function": "It's a placeholer",
+		"funFacts" : "It's not a real building",
+		"longHistory": "It was made up on Sunday September 13th, 2020",
+		"imageName": "989484_5e3ee76a"
+	},
+	{
+		"number": 4,
+		"name": "The second one",
+		"short": "This is another test building",
+		"history": "It was made up in 2020",
+		"function": "It's a different placeholer",
+		"funFacts" : "It's not a real building",
+		"longHistory": "It was also made up on Sunday September 13th, 2020",
+		"imageName": "photo1jpg"
+	},
+	{
+		"number": 5,
+		"name": "The first one",
+		"short": "This is the first test building",
+		"history": "It was made up in 2020",
+		"function": "It's a placeholer",
+		"funFacts" : "It's not a real building",
+		"longHistory": "It was made up on Sunday September 13th, 2020",
+		"imageName": "989484_5e3ee76a"
+	},
+	{
+		"number": 6,
+		"name": "The second one",
+		"short": "This is another test building",
+		"history": "It was made up in 2020",
+		"function": "It's a different placeholer",
+		"funFacts" : "It's not a real building",
 		"longHistory": "It was also made up on Sunday September 13th, 2020",
 		"imageName": "photo1jpg"
 	}

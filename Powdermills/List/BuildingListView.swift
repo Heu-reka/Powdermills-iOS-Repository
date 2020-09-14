@@ -12,9 +12,14 @@ struct BuildingListView: View {
 	var body: some View {
 		List {
 			ForEach(viewModel.buildings) { building in
-				BuildingRowView(building: building)
+				NavigationLink(
+					destination:
+						BuildingDetailsView(viewModel: BuildingDetailsViewModel(building: building)),
+					label: {
+						BuildingRowView(building: building)
+					})
 			}
-		}
+		}.listStyle(PlainListStyle())
 	}
 }
 
