@@ -38,7 +38,7 @@ struct BuildingRowView: View {
 				.font(.headline)
 				.frame(maxWidth: .infinity, alignment: .leading)
 			Text(building.short)
-				.frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+				.frame(maxWidth: .infinity, alignment: .leading)
 		}
 	}
 }
