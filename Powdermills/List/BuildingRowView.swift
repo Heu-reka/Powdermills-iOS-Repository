@@ -36,7 +36,7 @@ struct BuildingRowView: View {
 		VStack {
 			Text(building.name)
 				.font(.headline)
-				.frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+				.frame(maxWidth: .infinity, alignment: .leading)
 			Text(building.short)
 				.frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
 		}
