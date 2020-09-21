@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Building: Codable, Hashable, Identifiable {
+struct Building: Codable, Identifiable {
 	public static let longHistoryCharacterCount = 2000
 	
 	var number: Int = -1
@@ -23,38 +23,7 @@ class Building: Codable, Hashable, Identifiable {
 		number
 	}
 	
-	static func == (lhs: Building, rhs: Building) -> Bool {
-		return lhs.number == rhs.number &&
-			lhs.name == rhs.name &&
-			lhs.short == rhs.short &&
-			lhs.history == rhs.history &&
-			lhs.function == rhs.function &&
-			lhs.funFacts == rhs.funFacts &&
-			lhs.longHistory == rhs.longHistory &&
-			lhs.imageName == rhs.imageName
-	}
-	
-	func hash(into hasher: inout Hasher) {
-		hasher.combine(number)
-		hasher.combine(name)
-		hasher.combine(short)
-		hasher.combine(history)
-		hasher.combine(function)
-		hasher.combine(funFacts)
-		hasher.combine(longHistory)
-		hasher.combine(imageName)
-	}
-	
 	static func debugBuilding() -> Building {
-		let testBuilding = Building()
-		testBuilding.number = 42
-		testBuilding.name = "Test building"
-		testBuilding.short = "It's a building for testing"
-		testBuilding.history = "Just made it up now"
-		testBuilding.function = "It's for testing layout"
-		testBuilding.funFacts = "It's not a real building"
-		testBuilding.longHistory = "Just made it up on Sunday night"
-		testBuilding.imageName = "989484_5e3ee76a"
-		return testBuilding
+		return Building(number: 42, name: "Test building", short: "It's a building for testing", history: "Just made it up now", function: "It's for testing layout", funFacts: "It's not a real building", longHistory: "Just made it up on Sunday night", imageName: "989484_5e3ee76a")
 	}
 }
