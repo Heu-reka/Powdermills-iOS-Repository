@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
 	@ObservedObject var viewModel = HomeViewModel()
     
-    @State var showTermsAndConditions = false
+    @State var showTermsAndConditions = true
 	
 	var body: some View {
 		vstackMode
