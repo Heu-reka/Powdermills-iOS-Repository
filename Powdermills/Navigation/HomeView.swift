@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
 	@ObservedObject var viewModel = HomeViewModel()
+    
+    @State var showTermsAndConditions = false
 	
 	var body: some View {
 		vstackMode
@@ -18,7 +20,7 @@ struct HomeView: View {
 		VStack {
 			content
 			.navigationBarTitle(viewModel.state.modeTitle(), displayMode: .inline)
-			.navigationBarItems(trailing: modeButton)
+			.navigationBarItems(leading: termsAndConditionButton, trailing: modeButton)
 		}
 	}
 	
@@ -41,6 +43,16 @@ struct HomeView: View {
 			Image(systemName: viewModel.state.buttonImage())
 		}
 	}
+    
+    var termsAndConditionButton: some View {
+        Button(action: {
+            self.showTermsAndConditions = true
+        }) {
+            Image(systemName: "scroll")
+        }.fullScreenCover(isPresented: self.$showTermsAndConditions, content: {
+            TermsAndConditionsView()
+        })
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {
