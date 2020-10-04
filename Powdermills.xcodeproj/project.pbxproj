@@ -23,6 +23,9 @@
 		B4A98A6A250EC5FC0087F3E8 /* BuildingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A69250EC5FC0087F3E8 /* BuildingRowView.swift */; };
 		B4A98A6D250EC9910087F3E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A6C250EC9910087F3E8 /* HomeView.swift */; };
 		B4A98A6F250EC9990087F3E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A6E250EC9990087F3E8 /* HomeViewModel.swift */; };
+		C2BF640F252A5D3F0033DDDD /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BF640E252A5D3F0033DDDD /* TermsAndConditionsView.swift */; };
+		C2BF6414252A786F0033DDDD /* terms-and-conditions.txt in Resources */ = {isa = PBXBuildFile; fileRef = C2BF6413252A786F0033DDDD /* terms-and-conditions.txt */; };
+		C2BF6419252A791C0033DDDD /* TermsAndConditionsText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BF6418252A791C0033DDDD /* TermsAndConditionsText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		B4A98A69250EC5FC0087F3E8 /* BuildingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingRowView.swift; sourceTree = "<group>"; };
 		B4A98A6C250EC9910087F3E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B4A98A6E250EC9990087F3E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C2BF640E252A5D3F0033DDDD /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
+		C2BF6413252A786F0033DDDD /* terms-and-conditions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "terms-and-conditions.txt"; sourceTree = "<group>"; };
+		C2BF6418252A791C0033DDDD /* TermsAndConditionsText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +124,12 @@
 				B469D3F1250FDBB000DA919C /* Details */,
 				B4A98A6B250EC9790087F3E8 /* Navigation */,
 				B4A98A62250EC0750087F3E8 /* Models */,
+				C2BF63F7252A5CCB0033DDDD /* TermsAndConditions */,
 				B4A98A5D250EC03F0087F3E8 /* List */,
 				B4275BB224FB924D00739741 /* PowdermillsApp.swift */,
 				B4275BB424FB924D00739741 /* ContentView.swift */,
 				B4275BB624FB924E00739741 /* Assets.xcassets */,
+				C2BF6413252A786F0033DDDD /* terms-and-conditions.txt */,
 				B4A98A65250EC1BC0087F3E8 /* buildings.json */,
 				B4275BBB24FB924E00739741 /* Info.plist */,
 				B4275BB824FB924E00739741 /* Preview Content */,
@@ -190,6 +198,15 @@
 				B4A98A6E250EC9990087F3E8 /* HomeViewModel.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C2BF63F7252A5CCB0033DDDD /* TermsAndConditions */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF640E252A5D3F0033DDDD /* TermsAndConditionsView.swift */,
+				C2BF6418252A791C0033DDDD /* TermsAndConditionsText.swift */,
+			);
+			path = TermsAndConditions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2BF6414252A786F0033DDDD /* terms-and-conditions.txt in Resources */,
 				B4275BBA24FB924E00739741 /* Preview Assets.xcassets in Resources */,
 				B4A98A66250EC1BC0087F3E8 /* buildings.json in Resources */,
 				B4275BB724FB924E00739741 /* Assets.xcassets in Resources */,
@@ -324,11 +342,13 @@
 			files = (
 				B4A98A61250EC0650087F3E8 /* BuildingListViewModel.swift in Sources */,
 				B469D3F5250FDBCC00DA919C /* BuildingDetailsViewModel.swift in Sources */,
+				C2BF640F252A5D3F0033DDDD /* TermsAndConditionsView.swift in Sources */,
 				B4A98A6D250EC9910087F3E8 /* HomeView.swift in Sources */,
 				B4A98A6A250EC5FC0087F3E8 /* BuildingRowView.swift in Sources */,
 				B469D3F3250FDBBE00DA919C /* BuildingDetailsView.swift in Sources */,
 				B4A98A6F250EC9990087F3E8 /* HomeViewModel.swift in Sources */,
 				B4275BB524FB924D00739741 /* ContentView.swift in Sources */,
+				C2BF6419252A791C0033DDDD /* TermsAndConditionsText.swift in Sources */,
 				B4A98A64250EC0850087F3E8 /* Building.swift in Sources */,
 				B4A98A5F250EC04C0087F3E8 /* BuildingListView.swift in Sources */,
 				B4275BB324FB924D00739741 /* PowdermillsApp.swift in Sources */,
