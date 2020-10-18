@@ -1,63 +1,130 @@
 [
 	{
 		"number": 1,
-		"name": "The first one",
-		"short": "This is the first test building",
-		"history": "It was made up in 2020",
-		"function": "It's a placeholer",
-		"funFacts" : "It's not a real building",
-		"longHistory": "It was made up on Sunday September 13th, 2020",
-		"imageName": "989484_5e3ee76a"
+		"name": "Incorporating Mill",
+		"history": "The original gunpowder mills had 4 Incorporating Mills. This was increased to 12 Incorporating mills by the next owners, the British Board of Ordnance, and finally to 24 Incorporating Mills by the third owners, Tobin & Horsfall.",
+		"function": "An Incorporating Mill finely ground a mixture of saltpetre, sulphur and charcoal together to product crude gunpowder. The process used two heavy millstones to carry out the operation. The millstones were rotated by a mechanical system powered by a water wheel.",
+		"funFacts": "The original Incorporating Mills buildings were made of wood and have not survived. The building you see today is a modern reconstruction built in 1993. The large stone walls you see in the Incorporating Mills area are blast walls to prevent an explosion in one set of the incorporating mills spreading to neighbouring incorporating mills.",
+		"imageName": ""
 	},
 	{
-		"number": 2,
-		"name": "The second one",
-		"short": "This is another test building",
-		"history": "It was made up in 2020",
-		"function": "It's a different placeholer",
-		"funFacts" : "It's not a real building",
-		"longHistory": "It was also made up on Sunday September 13th, 2020",
-		"imageName": "photo1jpg"
+		"number": 35,
+		"name": "Charcoal Mill",
+		"history": "The charcoal mill was constructed by the original gunpowder mills owner Charles Henry Leslie in 1794. It continued to be used until the gunpowder mills were closed in 1903.",
+		"function": "Charcoal was prepared from lengths of wood about 60 cm in length and 10 cm in diameter. They were heated in a very hot oven in a building called the Charcoal Burning House and then crushed and  ground to a fine powder in the Charcoal Mill. A waterwheel was used to drive the milling machinery.",
+		"funFacts": "Charcoal production in the ovens produced three other side products,Pyroligneous Acid, Tar and an Inflammable Gas. The Pyroligneous Acid was used as a wood preseravative, the Tar to coat the walls and floor of mill races to prevent erosion by the fast flowing water and the Infammable Gas was used to heat the charcoal ovens.",
+		"imageName": ""
 	},
 	{
-		"number": 3,
-		"name": "The first one",
-		"short": "This is the first test building",
-		"history": "It was made up in 2020",
-		"function": "It's a placeholer",
-		"funFacts" : "It's not a real building",
-		"longHistory": "It was made up on Sunday September 13th, 2020",
-		"imageName": "989484_5e3ee76a"
+		"number": 36,
+		"name": "Millwright, Carpenters Shop & Copper Store",
+		"history": "The Millwright was a specialist who worked to build, repair and maintain the various water mills on the site used for the manufacture of gunpowder. The Carpenter built and repaired wooden buildings and structures. The Copper Store was used to store supplies of copper for tools and other items made of copper. Copper needed to be stored separately to ensure no iron materials were mixed with it.",
+		"function": "The Millwright maintained the 20 Water powered process units on the site. There were about 33 wooden buildings on the site that were maintained by the carpenters. Machinery on the site also had wooden components that required maintainance by carpenters. Copper was the chosen metal for tools, screws, nails and hammers as it would not cause a spark in use. It needed to be carefully segregated from iron materials for  safety reasons.",
+		"funFacts": "",
+		"imageName": ""
 	},
 	{
-		"number": 4,
-		"name": "The second one",
-		"short": "This is another test building",
-		"history": "It was made up in 2020",
-		"function": "It's a different placeholer",
-		"funFacts" : "It's not a real building",
-		"longHistory": "It was also made up on Sunday September 13th, 2020",
-		"imageName": "photo1jpg"
+		"number": 37,
+		"name": "Cooperage No. 4",
+		"history": "A Cooper was a skilled craftsman who made barrels for gunpowder storage, or other wooden waterproof storage containers. The barrels were manufactured in a Cooperage building.",
+		"function": "Gunpowder, both, in partly manufactured form and finished form was stored in watertight barrels. Each barrel was made up of about 8 specially shaped pieces of wood called staves to make the body of the barrel and 6-8 specially shaped pieces of wood for the top and bottom of the barrel. The barrel was held together by wooden hoops.  The standard barrel for gunpowder for sale contained about 45 kg of gunpowder.",
+		"funFacts": "About 50 Coopers were employed at the Gunpowder Mills. No iron could be used anywhere in the construction of the barrel because of the danger of a spark being created by scraping the iron on stone, or grit.",
+		"imageName": ""
 	},
 	{
-		"number": 5,
-		"name": "The first one",
-		"short": "This is the first test building",
-		"history": "It was made up in 2020",
-		"function": "It's a placeholer",
-		"funFacts" : "It's not a real building",
-		"longHistory": "It was made up on Sunday September 13th, 2020",
-		"imageName": "989484_5e3ee76a"
+		"number": 40,
+		"name": "Weighbridge",
+		"history": "The weighbridge was installed around 1807 by the British Board of Ordnance.",
+		"function": "A weighbridge is a weighing machine on which loaded carts may be weighed by driving the cart onto a metal plate flush with the road. It was used to weigh materials purchased by the gunpowder mills,  and barrels of gunpowder being sold to customers.",
+		"funFacts": "The Weigh Bridge currently on the site is a replacement installed in the mid 19th century for the original weighbridge installed by the British Board of Ordnance around 1807.",
+		"imageName": ""
 	},
 	{
-		"number": 6,
-		"name": "The second one",
-		"short": "This is another test building",
-		"history": "It was made up in 2020",
-		"function": "It's a different placeholer",
-		"funFacts" : "It's not a real building",
-		"longHistory": "It was also made up on Sunday September 13th, 2020",
-		"imageName": "photo1jpg"
+		"number": 49,
+		"name": "New Sawmill",
+		"history": "A sawmill was required on the site to cut and shape wood for various uses such as, the construction of wooden buildings, wooden supports for machinery and for producing barrels for storing gunpowder. A sawmill  existed on the site since about 1807. A new sawmill was built around 1870 to supplement the output of the original sawmill.",
+		"function": "At peak production in the Ballincollig Gunpowder Mills about 80 gunpowder storage barrels needed to be produced per day. The new sawmill was powered by an internal combustion engine, the only nonwater powered machinery on the site.",
+		"funFacts": "",
+		"imageName": ""
+	},
+	{
+		"number": 50,
+		"name": "Sulphur Refinery",
+		"history": "The Sulphur (also called 'Brimstone') needed to be purified before use. This was carried out by distilling the crude purchased sulphur in a process similar to the making of whiskey but at a much higher temperature.",
+		"function": "Sulphur is added to gunpowder to made the gunpowder easier to ignite.",
+		"funFacts": "Gunpowder was composed of 10% sulphur.",
+		"imageName": ""
+	},
+	{
+		"number": 52,
+		"name": "Saltpetre Refinery",
+		"history": "The Saltpetre (whose chemical name is 'Potassium Nitrate') used in the Ballincollig gunpowder mills was obtained from Bengal, in east India.  Saltpetre is a natural material produced by bacterial decomposition of animal waste. An impure Saltpetre was imported. The Saltpetre refinery needed to purify the material so that it was 99.99% pure to be suitable for use in gunpowder manufacture.",
+		"function": "The refinery process consisted of  dissolving the Saltpetre in hot water, removing small stones and earth by passing the hot liquid through a filter and then allowed the hot liquid to cool. The cooling caused crystals of pure Saltpetre to form. The crystals were then removed from the cold liquid.",
+		"funFacts": "Gunpowder consisted of 75% of Saltpetre. About 4,000 kg of pure Saltpetre were required to be refined per day.",
+		"imageName": ""
+	},
+	{
+		"number": 67,
+		"name": "Dust House No. 2",
+		"history": "The process of granulating the pressed gunpowder generated a lot of gunpowder dust. This had to be removed to make the gunpowder suitable for use.",
+		"function": "The gunpowder dust was removed by passing the granulated gunpowder through a fine screen that retained the granulated gunpowder and allowed the gunpowder dust to pass through the screen. The removed dust was recycled back to the Incorporating Mills.",
+		"funFacts": "Gunpowder dust was very dangerous and easily ignited and had to be very carefully managed to prevent an explosion.",
+		"imageName": ""
+	},
+	{
+		"number": 68,
+		"name": "New Magazine No. 1",
+		"history": "The manufactured gunpowder was stored in wooden barrels in a Gunpowder Magazine. Due to the increased gunpowder production capacity by the Horsfall and Tobin owners a new gunpowder magazine had to be constructed around 1835.",
+		"function": "The gunpowder produced at the gunpowder mills was stored in barrels generally containing 45 kg of gunpowder. The barrels were stored in a magazine before being shipped to customers.  Having large quantities of gunpowder stored was a significant hazard.",
+		"funFacts": "Magazine: Is an Arabic word meaning storehouse (مخزن).",
+		"imageName": ""
+	},
+	{
+		"number": 70,
+		"name": "Drying House",
+		"history": "A small quantity of water was added to the crude gunpowder mixture being processed in the Incorporating Mills. This was to mimimise dust formed in the Incorporation process and to act as a binder for the incorporated gunpowder. The added water need to be removed in the last stage of the gunpowder manufacturing process.",
+		"function": "Water was boiled in a copper vessel to produce steam using a coal fire to heat the water. The steam produced was fed through a pipe system to a gunpowder drying room. The pipes in the drying room were similar to a domestic radiator. The gunpowder to be dried was placed in open shallow trays and dried for a number of hours before being put into barrels for storage in the Gunpowder Magazine.",
+		"funFacts": "The gunpowder was dried at about 45 C.",
+		"imageName": ""
+	},
+	{
+		"number": 73,
+		"name": "Glazing House",
+		"history": "Glazing is a process that removed rough edges from the corned gunpowder. Without this process the gunpowder pieces would rub together on transport and creat gunpowder dust . This mixture of gunpowder granules and gunpowder powder would make the explosion of the gunpowder unpredictable when it was used.",
+		"function": "Following the corning process, gunpowder was ‘glazed’. For certain grades of gunpowder a small quantity of powdered graphite was added for improved smoothness and moisture resistance.",
+		"funFacts": "",
+		"imageName": ""
+	},
+	{
+		"number": 74,
+		"name": "Expense Magazine No.1",
+		"history": "The Expense Magazine was used to store small quantities of partly manufactured gunpowder pending their further processing.",
+		"function": "Partially manufactured gunpowder was moved by boat on the main canal in the gunpowder mills site. This was done to mimimise the risk of explosion while moving the material from process to process. The Powder Boats, as they were called, were pulled by a pony with a harness connected to the powder boat by a rope and steered by a gunpowderman in the boat.",
+		"funFacts": "The use of the word “Expense” is an outdated use of the English word expense meaning ‘part of’ and not the complete amount.",
+		"imageName": ""
+	},
+	{
+		"number": 76,
+		"name": "Press House No.1",
+		"history": "The gunpowder from the incorporating mills was placed in thin layers between copper sheets and a large pressure applied to the sheets to produced a hard ‘Gunpowder Biscuit’ about 0.6 metres square.",
+		"function": "The high pressure necessary to form the gunpowder 'biscuits' was obtained by means of a water wheel powered hydraulic press.",
+		"funFacts": "The pressure used was about 80 kg/square cm (or equivalent to someone standing with all their weigh on the nail of your little finger!!)",
+		"imageName": ""
+	},
+	{
+		"number": 80,
+		"name": "Corning House No.1",
+		"history": "It was discovered that the most efficient form of gunpowder consisted of small pieces of gunpowder which were referred to as “Gunpowder Corns”. The name originating from the size of the pieces of gunpowder being similar to barley, or wheat, corns.",
+		"function": "Different sized gunpowder corns were manufactured. Larger corn sizes were used for artillery and smaller corn sizes for rifles, or pistols.",
+		"funFacts": "",
+		"imageName": ""
+	},
+	{
+		"number": 84,
+		"name": "Watchman's House",
+		"history": "Due to the dangerous nature of gunpowder manufacturing it was important that a strict control of personnel entering the site was maintained.",
+		"function": "There were a number of Watchman’s houses on the Gunpowder Mills site. Their purpose was to to ensure that no unauthorised visitors entered the site.",
+		"funFacts": "The circular structure of this Watchmans House is unusual, as is the fluted design of the walls. This was the original design built by the British Board of Ordnance. The rectangular house was added to the circular watchhouse during the Horsfall and Tobin ownership. There are no other circular Watchmans houses on the site.",
+		"imageName": ""
 	}
 ]
- 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B418449B253CCE65008247B7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418449A253CCE65008247B7 /* Colors.swift */; };
 		B4275BB324FB924D00739741 /* PowdermillsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BB224FB924D00739741 /* PowdermillsApp.swift */; };
 		B4275BB524FB924D00739741 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BB424FB924D00739741 /* ContentView.swift */; };
 		B4275BB724FB924E00739741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4275BB624FB924E00739741 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B418449A253CCE65008247B7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B4275BAF24FB924D00739741 /* Powdermills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Powdermills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4275BB224FB924D00739741 /* PowdermillsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowdermillsApp.swift; sourceTree = "<group>"; };
 		B4275BB424FB924D00739741 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				B4A98A65250EC1BC0087F3E8 /* buildings.json */,
 				B4275BBB24FB924E00739741 /* Info.plist */,
 				B4275BB824FB924E00739741 /* Preview Content */,
+				B418449A253CCE65008247B7 /* Colors.swift */,
 			);
 			path = Powdermills;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				B469D3F3250FDBBE00DA919C /* BuildingDetailsView.swift in Sources */,
 				B4A98A6F250EC9990087F3E8 /* HomeViewModel.swift in Sources */,
 				B4275BB524FB924D00739741 /* ContentView.swift in Sources */,
+				B418449B253CCE65008247B7 /* Colors.swift in Sources */,
 				C2BF6419252A791C0033DDDD /* TermsAndConditionsText.swift in Sources */,
 				B4A98A64250EC0850087F3E8 /* Building.swift in Sources */,
 				B4A98A5F250EC04C0087F3E8 /* BuildingListView.swift in Sources */,

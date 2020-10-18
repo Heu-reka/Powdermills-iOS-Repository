@@ -12,11 +12,11 @@ struct Building: Codable, Identifiable {
 	
 	var number: Int = -1
 	var name: String = ""
-	var short: String = ""
+//	var short: String = ""
 	var history: String = ""
 	var function: String = ""
 	var funFacts: String = ""
-	var longHistory: String = ""
+//	var longHistory: String = ""
 	var imageName: String = ""
 	
 	var id: Int {
@@ -24,6 +24,6 @@ struct Building: Codable, Identifiable {
 	}
 	
 	static func debugBuilding() -> Building {
-		return Building(number: 42, name: "Test building", short: "It's a building for testing", history: "Just made it up now", function: "It's for testing layout", funFacts: "It's not a real building", longHistory: "Just made it up on Sunday night", imageName: "989484_5e3ee76a")
+		return Building(number: 42, name: "Test building"/*, short: "It's a building for testing"*/, history: "Just made it up now", function: "It's for testing layout", funFacts: "It's not a real building"/*, longHistory: "Just made it up on Sunday night"*/, imageName: "989484_5e3ee76a")
 	}
 }

@@ -11,11 +11,36 @@ struct BuildingRowView: View {
 	var building: Building
 	
 	var body: some View {
-		HStack {
-			buildingImage
-			Spacer()
-			buildingText
-		}.padding(.vertical)
+		ZStack {
+			Rectangle()
+				.frame(maxWidth: .infinity, minHeight: 60, maxHeight: 60, alignment: .center)
+				.foregroundColor(.listItemBackgroundColor)
+				.shadow(radius: 8)
+			HStack {
+				dot
+					.padding(.trailing, 2)				
+				Text("\(building.name)")
+					.foregroundColor(.listTextColor)
+				Spacer()
+				chevron
+			}.padding()
+		}
+	}
+	
+	var dot: some View {
+		Image(systemName: "circle.fill")
+			.resizable()
+			.aspectRatio(contentMode: ContentMode.fit)
+			.frame(width: 10, height: 10, alignment: .center)
+			.foregroundColor(.listDotColor)
+	}
+	
+	var chevron: some View {
+		Image(systemName: "chevron.right")
+			.resizable()
+			.aspectRatio(contentMode: ContentMode.fit)
+			.frame(width: 10, height: 10, alignment: .center)
+			.foregroundColor(.listChevronColor)
 	}
 	
 	var buildingImage: some View {
@@ -32,26 +57,30 @@ struct BuildingRowView: View {
 		}
 	}
 	
-	var buildingText: some View {
-		VStack {
-			Text(building.name)
-				.font(.headline)
-				.frame(maxWidth: .infinity, alignment: .leading)
-			Text(building.short)
-				.frame(maxWidth: .infinity, alignment: .leading)
-		}
-	}
 }
 
 struct BuildingRowView_Previews: PreviewProvider {
 	static var previews: some View {
-		List {
-			BuildingRowView(building: Building.debugBuilding())
-			BuildingRowView(building: Building.debugBuilding())
-			BuildingRowView(building: Building.debugBuilding())
-			BuildingRowView(building: Building.debugBuilding())
-			BuildingRowView(building: Building.debugBuilding())
+		Group {
+			ScrollView(.vertical) {
+				LazyVStack(alignment: .center, spacing: 20, content: {
+					BuildingRowView(building: Building.debugBuilding())
+					BuildingRowView(building: Building.debugBuilding())
+					BuildingRowView(building: Building.debugBuilding())
+					BuildingRowView(building: Building.debugBuilding())
+					BuildingRowView(building: Building.debugBuilding())
+				})
+				.padding()
+			}
 			
-		}.listStyle(DefaultListStyle())
+			List {
+				BuildingRowView(building: Building.debugBuilding())
+				BuildingRowView(building: Building.debugBuilding())
+				BuildingRowView(building: Building.debugBuilding())
+				BuildingRowView(building: Building.debugBuilding())
+				BuildingRowView(building: Building.debugBuilding())
+				
+			}.listStyle(DefaultListStyle())
+		}
 	}
 }
