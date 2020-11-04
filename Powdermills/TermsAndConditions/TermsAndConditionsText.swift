@@ -14,7 +14,7 @@ class TermsAndConditionsText {
         if let textPath = Bundle.main.path(forResource: "terms-and-conditions", ofType: "txt") {
             do {
                 let textData = try Data(contentsOf: URL(fileURLWithPath: textPath))
-                self.text = String(data: textData, encoding: .utf8)!
+                self.text = String(data: textData, encoding: .utf8) ?? ""
                 return
             } catch {
                 print("Error loading terms-and-conditions.txt: \(error)")
