@@ -12,6 +12,19 @@ struct TermsAndConditionsView: View {
     
     @Environment(\.presentationMode) var presentation
     
+    func BoldedText(_ line: Substring) -> some View {
+//        let titleRegex = try! NSRegularExpression(pattern: "^[1-9][0-9]?. ")
+//        let str = String(line)
+//        let isTitle = titleRegex.firstMatch(in: str, range: NSRange(location: 0, length: str.utf16.count))
+        var isBold = true
+        
+        return line.components(separatedBy: "\\*\\*").reduce(Text(""), {
+            isBold.toggle()
+            return $0 + Text($1).fontWeight(isBold ? .bold : .medium)
+        })
+//        .font(isTitle == nil ? .body : .title3).padding(.top, isTitle == nil ? 0 : 10)
+    }
+    
     let termsAndConditionsText = TermsAndConditionsText()
     
     var body: some View {
@@ -30,10 +43,9 @@ struct TermsAndConditionsView: View {
                         .padding(.top, 28)
                     
                     ScrollView {
-                        ForEach(self.termsAndConditionsText.text.split(separator: "\r"), id: \.self) { line in
-                            Text(line)
-                                .fontWeight(.medium)
-                                .frame(maxWidth:.infinity, alignment: .leading)
+                        ForEach(self.termsAndConditionsText.text.split(separator: "\r"), id: \.self) { (line: Substring) in
+                            BoldedText(line)
+                                .frame(maxWidth: .infinity, alignment: .leading)
                                 .padding(1)
                         }
                     }.padding(.horizontal)
