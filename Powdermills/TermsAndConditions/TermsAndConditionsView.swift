@@ -30,8 +30,12 @@ struct TermsAndConditionsView: View {
                         .padding(.top, 28)
                     
                     ScrollView {
-                        Text(termsAndConditionsText.text)
-                            .fontWeight(.medium)
+                        ForEach(self.termsAndConditionsText.text.split(separator: "\r"), id: \.self) { line in
+                            Text(line)
+                                .fontWeight(.medium)
+                                .frame(maxWidth:.infinity, alignment: .leading)
+                                .padding(1)
+                        }
                     }.padding(.horizontal)
                     
                     Button(action: {
