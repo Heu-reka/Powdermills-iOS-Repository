@@ -24,7 +24,14 @@ struct BuildingRowView: View {
 				Spacer()
 				chevron
 			}.padding()
-		}
+		}.onAppear(perform: {
+			print("onAppear \(building.name)")
+			if building.name == "Incorporating Mill" {
+				print("here")
+			}
+		}).onDisappear(perform: {
+			print("onDisappear \(building.name)")
+		})
 	}
 	
 	var dot: some View {
