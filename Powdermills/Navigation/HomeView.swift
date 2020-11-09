@@ -30,7 +30,7 @@ struct HomeView: View {
 			case .list:
 				BuildingListView(viewModel: viewModel.listViewModel)
 			case .map:
-				Text("Map coming soon!")
+				ParkMapView()
 			}
 		}
 	}

@@ -12,7 +12,7 @@ struct ContentView: View {
 		NavigationView {
 			HomeView()
 				.navigationBarTitle("POWDERMILLS", displayMode: .inline)
-		}
+		}.navigationViewStyle(StackNavigationViewStyle())
 	}
 }
 
