@@ -10,10 +10,13 @@ import SwiftUI
 struct HomeView: View {
 	@ObservedObject var viewModel = HomeViewModel()
     
-    @State var showTermsAndConditions = true
+    @State var showTermsAndConditions = false
 	
 	var body: some View {
-		vstackMode
+		ZStack {
+			backgroundImage
+			vstackMode
+		}
 	}
 	
 	var vstackMode: some View {
@@ -24,6 +27,19 @@ struct HomeView: View {
 		}
 	}
 	
+	var backgroundImage: some View {
+		ZStack {
+			Image("background")
+				.resizable()
+				.aspectRatio(contentMode: .fill)
+			if viewModel.state == .list {
+				Rectangle()
+					.foregroundColor(.listItemBackgroundColor)
+					.opacity(0.5)
+			}
+		}
+	}
+
 	var content: some View {
 		Group {
 			switch viewModel.state {

@@ -23,7 +23,7 @@ struct BuildingDetailsView: View {
 			Text("History")
 				.font(.headline)
 				.frame(maxWidth: .infinity, alignment: .leading)
-			Text(viewModel.building.longHistory)
+			Text(viewModel.building.history)
 				.frame(maxWidth: .infinity, alignment: .leading)
 			Spacer()
 			Text("Fun Facts")

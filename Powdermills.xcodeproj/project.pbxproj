@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		14CAC3D500FBA48705574EB1 /* Pods_Powdermills_PowdermillsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDAFAB896D4F7B51ABC99A /* Pods_Powdermills_PowdermillsUITests.framework */; };
 		79446276C6DD470E73526BC3 /* Pods_Powdermills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF24C9167A25251D2322E8E /* Pods_Powdermills.framework */; };
+		B418449B253CCE65008247B7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418449A253CCE65008247B7 /* Colors.swift */; };
 		B4275BB324FB924D00739741 /* PowdermillsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BB224FB924D00739741 /* PowdermillsApp.swift */; };
 		B4275BB524FB924D00739741 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BB424FB924D00739741 /* ContentView.swift */; };
 		B4275BB724FB924E00739741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4275BB624FB924E00739741 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		6529B1828D42B208762D27EE /* Pods-Powdermills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Powdermills.release.xcconfig"; path = "Target Support Files/Pods-Powdermills/Pods-Powdermills.release.xcconfig"; sourceTree = "<group>"; };
 		888A7CB8CCD4A86D01F2633B /* Pods-PowdermillsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowdermillsTests.release.xcconfig"; path = "Target Support Files/Pods-PowdermillsTests/Pods-PowdermillsTests.release.xcconfig"; sourceTree = "<group>"; };
 		9A37678B4D1BDB0C2A50C038 /* Pods-Powdermills-PowdermillsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Powdermills-PowdermillsUITests.release.xcconfig"; path = "Target Support Files/Pods-Powdermills-PowdermillsUITests/Pods-Powdermills-PowdermillsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B418449A253CCE65008247B7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B4275BAF24FB924D00739741 /* Powdermills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Powdermills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4275BB224FB924D00739741 /* PowdermillsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowdermillsApp.swift; sourceTree = "<group>"; };
 		B4275BB424FB924D00739741 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				B4A98A65250EC1BC0087F3E8 /* buildings.json */,
 				B4275BBB24FB924E00739741 /* Info.plist */,
 				B4275BB824FB924E00739741 /* Preview Content */,
+				B418449A253CCE65008247B7 /* Colors.swift */,
 			);
 			path = Powdermills;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				B469D3F3250FDBBE00DA919C /* BuildingDetailsView.swift in Sources */,
 				B4A98A6F250EC9990087F3E8 /* HomeViewModel.swift in Sources */,
 				B4275BB524FB924D00739741 /* ContentView.swift in Sources */,
+				B418449B253CCE65008247B7 /* Colors.swift in Sources */,
 				C2BF6419252A791C0033DDDD /* TermsAndConditionsText.swift in Sources */,
 				B4A98A64250EC0850087F3E8 /* Building.swift in Sources */,
 				B4A98A5F250EC04C0087F3E8 /* BuildingListView.swift in Sources */,
@@ -679,7 +683,7 @@
 				DEVELOPMENT_TEAM = 46K9FG5ZG8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Powdermills/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -703,7 +707,7 @@
 				DEVELOPMENT_TEAM = 46K9FG5ZG8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Powdermills/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
