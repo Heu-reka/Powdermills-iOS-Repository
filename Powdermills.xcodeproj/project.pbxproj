@@ -28,8 +28,8 @@
 		B4C43D9E0002F5459E4E6C3F /* Pods_PowdermillsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F4CD6FD790EF97C6647D33 /* Pods_PowdermillsTests.framework */; };
 		B4DCBD962559D7B30099D08A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCBD952559D7B30099D08A /* MapView.swift */; };
 		B4DCBD9E2559D7E80099D08A /* ParkMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCBD9D2559D7E80099D08A /* ParkMapView.swift */; };
+		C23BA8DD2550A597002EE7F4 /* terms-and-conditions.txt in Resources */ = {isa = PBXBuildFile; fileRef = C23BA8DC2550A597002EE7F4 /* terms-and-conditions.txt */; };
 		C2BF640F252A5D3F0033DDDD /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BF640E252A5D3F0033DDDD /* TermsAndConditionsView.swift */; };
-		C2BF6414252A786F0033DDDD /* terms-and-conditions.txt in Resources */ = {isa = PBXBuildFile; fileRef = C2BF6413252A786F0033DDDD /* terms-and-conditions.txt */; };
 		C2BF6419252A791C0033DDDD /* TermsAndConditionsText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BF6418252A791C0033DDDD /* TermsAndConditionsText.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,8 +81,8 @@
 		B4DCBD952559D7B30099D08A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B4DCBD9D2559D7E80099D08A /* ParkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapView.swift; sourceTree = "<group>"; };
 		B5EDAFAB896D4F7B51ABC99A /* Pods_Powdermills_PowdermillsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Powdermills_PowdermillsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23BA8DC2550A597002EE7F4 /* terms-and-conditions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "terms-and-conditions.txt"; sourceTree = "<group>"; };
 		C2BF640E252A5D3F0033DDDD /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
-		C2BF6413252A786F0033DDDD /* terms-and-conditions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "terms-and-conditions.txt"; sourceTree = "<group>"; };
 		C2BF6418252A791C0033DDDD /* TermsAndConditionsText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsText.swift; sourceTree = "<group>"; };
 		D1B9B598BDDDDA7A1D9499D7 /* Pods-Powdermills-PowdermillsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Powdermills-PowdermillsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Powdermills-PowdermillsUITests/Pods-Powdermills-PowdermillsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D63E57E5F935C2380B4F7476 /* Pods-PowdermillsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowdermillsTests.debug.xcconfig"; path = "Target Support Files/Pods-PowdermillsTests/Pods-PowdermillsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				B4275BB224FB924D00739741 /* PowdermillsApp.swift */,
 				B4275BB424FB924D00739741 /* ContentView.swift */,
 				B4275BB624FB924E00739741 /* Assets.xcassets */,
-				C2BF6413252A786F0033DDDD /* terms-and-conditions.txt */,
+				C23BA8DC2550A597002EE7F4 /* terms-and-conditions.txt */,
 				B4A98A65250EC1BC0087F3E8 /* buildings.json */,
 				B4275BBB24FB924E00739741 /* Info.plist */,
 				B4275BB824FB924E00739741 /* Preview Content */,
@@ -371,7 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2BF6414252A786F0033DDDD /* terms-and-conditions.txt in Resources */,
+				C23BA8DD2550A597002EE7F4 /* terms-and-conditions.txt in Resources */,
 				B4275BBA24FB924E00739741 /* Preview Assets.xcassets in Resources */,
 				B4A98A66250EC1BC0087F3E8 /* buildings.json in Resources */,
 				B4275BB724FB924E00739741 /* Assets.xcassets in Resources */,

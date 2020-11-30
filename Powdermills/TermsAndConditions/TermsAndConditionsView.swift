@@ -12,11 +12,24 @@ struct TermsAndConditionsView: View {
     
     @Environment(\.presentationMode) var presentation
     
+    func BoldedText(_ line: Substring) -> some View {
+//        let titleRegex = try! NSRegularExpression(pattern: "^[1-9][0-9]?. ")
+//        let str = String(line)
+//        let isTitle = titleRegex.firstMatch(in: str, range: NSRange(location: 0, length: str.utf16.count))
+        var isBold = true
+        
+        return line.components(separatedBy: "\\*\\*").reduce(Text(""), {
+            isBold.toggle()
+            return $0 + Text($1).fontWeight(isBold ? .bold : .medium)
+        })
+//        .font(isTitle == nil ? .body : .title3).padding(.top, isTitle == nil ? 0 : 10)
+    }
+    
     let termsAndConditionsText = TermsAndConditionsText()
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color(red: 42.0/255.0, green: 157.0/255.0, blue: 143.0/255.0), Color(red: 116.0/255.0, green: 191.0/255.0, blue: 182.0/255.0)]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [Color("Gradient_Top"), Color("Gradient_Bottom")]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             
             HStack {
@@ -30,8 +43,11 @@ struct TermsAndConditionsView: View {
                         .padding(.top, 28)
                     
                     ScrollView {
-                        Text(termsAndConditionsText.text)
-                            .fontWeight(.medium)
+                        ForEach(self.termsAndConditionsText.text.split(separator: "\r"), id: \.self) { (line: Substring) in
+                            BoldedText(line)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(1)
+                        }
                     }.padding(.horizontal)
                     
                     Button(action: {
@@ -42,7 +58,7 @@ struct TermsAndConditionsView: View {
                             
                             Text("I have read and agree to the terms and conditions")
                                 .fontWeight(.medium)
-                        }.foregroundColor(Color(red: 38.0/255.0, green: 70.0/255.0, blue: 83.0/255.0))
+                        }.foregroundColor(Color("AccentColor"))
                     }).padding(.top, 15)
                     .padding(.bottom, 10)
                     .padding(.horizontal)
@@ -55,7 +71,7 @@ struct TermsAndConditionsView: View {
                             .fontWeight(.medium)
                             .padding(.vertical, 10)
                             .padding(.horizontal, 35)
-                            .background(Color(red: 38.0/255.0, green: 70.0/255.0, blue: 83.0/255.0))
+                            .background(Color.accentColor)
                             .cornerRadius(20)
                             .padding(.bottom, 30)
                             .opacity(self.agreed ? 1 : 0.5)
@@ -64,7 +80,7 @@ struct TermsAndConditionsView: View {
                 }
                 
                 Spacer()
-            }.background(Color.white)
+            }.background(Color(UIColor.systemBackground))
             .cornerRadius(15)
             .padding(.horizontal, 25)
             .padding(.vertical, 100)
@@ -75,6 +91,12 @@ struct TermsAndConditionsView: View {
 
 struct TermsAndConditionsView_Previews: PreviewProvider {
     static var previews: some View {
-        TermsAndConditionsView()
+        Group {
+            TermsAndConditionsView()
+                .environment(\.colorScheme, .light)
+            
+            TermsAndConditionsView()
+                .environment(\.colorScheme, .dark)
+        }
     }
 }
