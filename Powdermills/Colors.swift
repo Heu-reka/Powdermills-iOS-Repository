@@ -14,4 +14,13 @@ extension Color {
 	public static let listDotColor = Color("listDotColor")
 	public static let listChevronColor = Color("listChevronColor")
 	public static let listItemBackgroundColor = Color("listItemBackgroundColor")
+	
+	public static let gradiant0 = Color("Gradiant0")
+	public static let gradiant1 = Color("Gradiant1")
+	public static let gradiant2 = Color("Gradiant2")
+	public static let gradiant3 = Color("Gradiant3")
+	
+	public static let triviaColor = Color("TriviaColor")
+	public static let historyColor = Color("HistoryColor")
+	public static let functionColor = Color("FunctionColor")
 }

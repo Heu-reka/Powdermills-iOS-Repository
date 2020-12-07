@@ -12,34 +12,29 @@ struct BuildingRowView: View {
 	
 	var body: some View {
 		ZStack {
-			Rectangle()
-				.frame(maxWidth: .infinity, minHeight: 60, maxHeight: 60, alignment: .center)
-				.foregroundColor(.listItemBackgroundColor)
-				.shadow(radius: 8)
-			HStack {
-				dot
-					.padding(.trailing, 2)				
-				Text("\(building.name)")
-					.foregroundColor(.listTextColor)
-				Spacer()
-				chevron
-			}.padding()
-		}.onAppear(perform: {
-			print("onAppear \(building.name)")
-			if building.name == "Incorporating Mill" {
-				print("here")
+			if building.imageName != "" {
+				buildingImage
 			}
-		}).onDisappear(perform: {
-			print("onDisappear \(building.name)")
-		})
+			gradient
+			VStack {
+				Spacer()
+				HStack {
+					Text("\(building.name)")
+						.foregroundColor(.listTextColor)
+						.padding(.trailing, 122)
+					Spacer()
+					chevron
+				}.padding()
+			}
+		}.frame(height: 146, alignment: .center)
 	}
 	
-	var dot: some View {
-		Image(systemName: "circle.fill")
-			.resizable()
-			.aspectRatio(contentMode: ContentMode.fit)
-			.frame(width: 10, height: 10, alignment: .center)
-			.foregroundColor(.listDotColor)
+	var gradient: some View {
+		LinearGradient(gradient: Gradient(colors: [.gradiant3, .gradiant2, .gradiant1, .gradiant0]), startPoint: .bottom, endPoint: .center)
+			.opacity(0.95)
+//		Rectangle()
+//			.strokeBorder(LinearGradient(gradient: Gradient(colors: [.gradiant3, .gradiant2, .gradiant1, .gradiant0]), startPoint: .bottom, endPoint: .center), lineWidth: 50)
+//			.opacity(0.95)
 	}
 	
 	var chevron: some View {
@@ -47,20 +42,16 @@ struct BuildingRowView: View {
 			.resizable()
 			.aspectRatio(contentMode: ContentMode.fit)
 			.frame(width: 10, height: 10, alignment: .center)
-			.foregroundColor(.listChevronColor)
+			.foregroundColor(.listTextColor)
 	}
 	
 	var buildingImage: some View {
-		ZStack {
-			Circle()
-				.foregroundColor(.secondary)
-				.frame(width: 81, height: 81, alignment: .center)
-				.shadow(radius: 2)
+		GeometryReader { geo in
 			Image(building.imageName)
 				.resizable()
-				.aspectRatio(contentMode: ContentMode.fill)
-				.frame(width: 80, height: 80, alignment: .center)
-				.clipShape(Circle())
+				.scaledToFill()
+				.frame(width: geo.size.width, height: geo.size.height)
+				.clipped()
 		}
 	}
 	

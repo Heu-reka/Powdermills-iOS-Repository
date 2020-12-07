@@ -12,27 +12,70 @@ struct BuildingDetailsView: View {
 	
 	var body: some View {
 		ScrollView {
-			Image(viewModel.building.imageName)
-				.resizable()
-				.aspectRatio(contentMode: .fit)
-			Text("Building number: \(viewModel.building.number)")
-				.frame(maxWidth: .infinity, alignment: .leading)
-			Text("Building function: \(viewModel.building.function)")
-				.frame(maxWidth: .infinity, alignment: .leading)
-			Divider()
-			Text("History")
-				.font(.headline)
-				.frame(maxWidth: .infinity, alignment: .leading)
+			Section(header: buildingImageView, content: {
+				history
+				function
+				if viewModel.building.funFacts.count > 0 {
+					trivia
+				}
+			})
+		}
+		.navigationBarTitle("\(viewModel.building.name)")
+	}
+	
+	var buildingImageView: some View {
+		ZStack {
+			GeometryReader { g in
+				//TODO: Make a carousel
+				Image(viewModel.building.imageName)
+					.resizable()
+					.scaledToFill()
+					.frame(width: g.size.width, height: g.size.height)
+					.clipped()
+			}
+			gradient
+			VStack {
+				Spacer()
+				Text("\(viewModel.building.name)")
+					.foregroundColor(.listTextColor)
+					.padding()
+			}
+		}
+		.frame(height: 146, alignment: .center)
+		.padding(.bottom, -8)
+	}
+	
+	
+	var gradient: some View {
+		LinearGradient(gradient: Gradient(colors: [.gradiant3, .gradiant2, .gradiant1, .gradiant0]), startPoint: .bottom, endPoint: .center)
+			.opacity(0.95)
+	}
+	
+	var history: some View {
+		VStack {
+			BuildingSubtitleView(text: "History", color: Color.historyColor, textColor: Color.white)
 			Text(viewModel.building.history)
 				.frame(maxWidth: .infinity, alignment: .leading)
-			Spacer()
-			Text("Fun Facts")
-				.font(.headline)
+				.padding()
+		}
+	}
+	
+	var function: some View {
+		VStack {
+			BuildingSubtitleView(text: "Function", color: Color.functionColor, textColor: Color.white)
+			Text("\(viewModel.building.function)")
 				.frame(maxWidth: .infinity, alignment: .leading)
+				.padding()
+		}
+	}
+	
+	var trivia: some View {
+		VStack {
+			BuildingSubtitleView(text: "Trivia", color: Color.triviaColor, textColor: Color.white)
 			Text(viewModel.building.funFacts)
 				.frame(maxWidth: .infinity, alignment: .leading)
-				.navigationBarTitle(viewModel.building.name, displayMode: .inline)
-		}.padding()
+				.padding()
+		}
 	}
 }
 

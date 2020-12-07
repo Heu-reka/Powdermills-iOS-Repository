@@ -11,21 +11,11 @@ struct BuildingListView: View {
 	var viewModel = BuildingListViewModel()
 	var body: some View {
 		ScrollView(.vertical) {
-			LazyVStack(alignment: .center, spacing: 20, content: {
-				Spacer()
-//				ForEach(viewModel.buildingViewModels) { viewModel in
-//					BuildingListViewItem(viewModel: viewModel)
-//				}
-				ForEach(viewModel.buildings) { building in
-					BuildingListViewItem(viewModel: BuildingListViewItemModel(building: building))
-//					NavigationLink(
-//						destination:
-//							BuildingDetailsView(viewModel: BuildingDetailsViewModel(building: building)),
-//						label: {
-//							BuildingRowView(building: building)
-//						})
+			LazyVStack(alignment: .center, spacing: 0, content: {
+				ForEach(viewModel.buildingViewModels) { viewModel in
+					BuildingListViewItem(viewModel: viewModel)
 				}
-			}).padding(.horizontal, 40)
+			})
 		}
 	}
 }
@@ -43,26 +33,10 @@ struct BuildingListViewItem: View {
 	var body: some View {
 		NavigationLink(
 				destination:
-					destination,
+					BuildingDetailsView(viewModel: viewModel.detailsViewModel),
 				label: {
-					AnyView(label)
-				}).onAppear(perform: {
-					print("onAppear NavigationLink \(viewModel.building.name)")
+					BuildingRowView(building: viewModel.building)
 				})
-	}
-	
-	var destination: some View {
-		BuildingDetailsView(viewModel: viewModel.detailsViewModel)
-			.onAppear(perform: {
-				print("onAppear BuildingDetailsView \(viewModel.building.name)")
-			})
-	}
-	
-	var label: some View {
-		BuildingRowView(building: viewModel.building)
-			.onAppear(perform: {
-			print("onAppear BuildingRowView \(viewModel.building.name)")
-		 })
 	}
 }
 

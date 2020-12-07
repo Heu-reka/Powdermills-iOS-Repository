@@ -9,21 +9,23 @@ import SwiftUI
 
 struct HomeView: View {
 	@ObservedObject var viewModel = HomeViewModel()
-    
-    @State var showTermsAndConditions = false
+	
+	@State var showTermsAndConditions = false
 	
 	var body: some View {
-		ZStack {
-			backgroundImage
+		if viewModel.state == .list {
 			vstackMode
+		} else {
+			ParkMapView()
+				.navigationBarTitle("Map", displayMode: .inline)
 		}
 	}
 	
 	var vstackMode: some View {
 		VStack {
-			content
-			.navigationBarTitle(viewModel.state.modeTitle(), displayMode: .inline)
-			.navigationBarItems(leading: termsAndConditionButton, trailing: modeButton)
+			BuildingListView(viewModel: viewModel.listViewModel)
+				.navigationBarTitle(viewModel.state.modeTitle(), displayMode: .inline)
+				.navigationBarItems(leading: termsAndConditionButton, trailing: modeButton)
 		}
 	}
 	
@@ -39,17 +41,6 @@ struct HomeView: View {
 			}
 		}
 	}
-
-	var content: some View {
-		Group {
-			switch viewModel.state {
-			case .list:
-				BuildingListView(viewModel: viewModel.listViewModel)
-			case .map:
-				ParkMapView()
-			}
-		}
-	}
 	
 	var modeButton: some View {
 		Button(action: {
@@ -59,16 +50,16 @@ struct HomeView: View {
 			Image(systemName: viewModel.state.buttonImage())
 		}
 	}
-    
-    var termsAndConditionButton: some View {
-        Button(action: {
-            self.showTermsAndConditions = true
-        }) {
-            Image(systemName: "scroll")
-        }.fullScreenCover(isPresented: self.$showTermsAndConditions, content: {
-            TermsAndConditionsView()
-        })
-    }
+	
+	var termsAndConditionButton: some View {
+		Button(action: {
+			self.showTermsAndConditions = true
+		}) {
+			Image(systemName: "scroll")
+		}.fullScreenCover(isPresented: self.$showTermsAndConditions, content: {
+			TermsAndConditionsView()
+		})
+	}
 }
 
 struct HomeView_Previews: PreviewProvider {

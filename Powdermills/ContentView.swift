@@ -11,7 +11,6 @@ struct ContentView: View {
 	var body: some View {
 		NavigationView {
 			HomeView()
-				.navigationBarTitle("POWDERMILLS", displayMode: .inline)
 		}.navigationViewStyle(StackNavigationViewStyle())
 	}
 }

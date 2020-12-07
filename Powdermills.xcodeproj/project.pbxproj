@@ -26,6 +26,7 @@
 		B4A98A6A250EC5FC0087F3E8 /* BuildingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A69250EC5FC0087F3E8 /* BuildingRowView.swift */; };
 		B4A98A6D250EC9910087F3E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A6C250EC9910087F3E8 /* HomeView.swift */; };
 		B4A98A6F250EC9990087F3E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A6E250EC9990087F3E8 /* HomeViewModel.swift */; };
+		B4AE0EB6257EA47800ED1962 /* BuildingSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE0EB5257EA47800ED1962 /* BuildingSubtitleView.swift */; };
 		B4C43D9E0002F5459E4E6C3F /* Pods_PowdermillsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F4CD6FD790EF97C6647D33 /* Pods_PowdermillsTests.framework */; };
 		B4DCBD962559D7B30099D08A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCBD952559D7B30099D08A /* MapView.swift */; };
 		B4DCBD9E2559D7E80099D08A /* ParkMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCBD9D2559D7E80099D08A /* ParkMapView.swift */; };
@@ -80,6 +81,7 @@
 		B4A98A69250EC5FC0087F3E8 /* BuildingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingRowView.swift; sourceTree = "<group>"; };
 		B4A98A6C250EC9910087F3E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B4A98A6E250EC9990087F3E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B4AE0EB5257EA47800ED1962 /* BuildingSubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingSubtitleView.swift; sourceTree = "<group>"; };
 		B4DCBD952559D7B30099D08A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B4DCBD9D2559D7E80099D08A /* ParkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapView.swift; sourceTree = "<group>"; };
 		B5EDAFAB896D4F7B51ABC99A /* Pods_Powdermills_PowdermillsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Powdermills_PowdermillsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 			children = (
 				B469D3F2250FDBBE00DA919C /* BuildingDetailsView.swift */,
 				B469D3F4250FDBCC00DA919C /* BuildingDetailsViewModel.swift */,
+				B4AE0EB5257EA47800ED1962 /* BuildingSubtitleView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				B469D3F3250FDBBE00DA919C /* BuildingDetailsView.swift in Sources */,
 				B4A98A6F250EC9990087F3E8 /* HomeViewModel.swift in Sources */,
 				B4275BB524FB924D00739741 /* ContentView.swift in Sources */,
+				B4AE0EB6257EA47800ED1962 /* BuildingSubtitleView.swift in Sources */,
 				B418449B253CCE65008247B7 /* Colors.swift in Sources */,
 				C2BF6419252A791C0033DDDD /* TermsAndConditionsText.swift in Sources */,
 				B4A98A64250EC0850087F3E8 /* Building.swift in Sources */,
