@@ -12,6 +12,8 @@ extension MGLPointAnnotation {
 struct MapView: UIViewRepresentable {
 	@Binding var annotations: [MGLPointAnnotation]
 	
+	var viewModel = BuildingListViewModel()
+	
 	private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
 	
 	// MARK: - Configuring UIViewRepresentable protocol
@@ -23,6 +25,15 @@ struct MapView: UIViewRepresentable {
 			mapView.styleURL = styleURL
 		}
 		mapView.showsUserLocation = true
+		
+		for building in viewModel.buildings {
+			let latitude = building.latitude
+			let longitude = building.longitude
+			if let coordinate = CLLocationCoordinate2DMake(latitude, longitude) {
+				let point = MGLPointAnnotation(title: "", coordinate: coordinate)
+			}
+		}
+		
 		return mapView
 	}
 	

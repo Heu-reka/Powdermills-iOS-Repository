@@ -25,7 +25,7 @@ struct HomeView: View {
 		VStack {
 			BuildingListView(viewModel: viewModel.listViewModel)
 				.navigationBarTitle(viewModel.state.modeTitle(), displayMode: .inline)
-				.navigationBarItems(leading: termsAndConditionButton, trailing: modeButton)
+				.navigationBarItems(trailing: modeButton)
 		}
 	}
 	

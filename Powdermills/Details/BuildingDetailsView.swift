@@ -10,6 +10,8 @@ import SwiftUI
 struct BuildingDetailsView: View {
 	var viewModel: BuildingDetailsViewModel
 	
+	@State var imageIndex: Int = 0
+	
 	var body: some View {
 		ScrollView {
 			Section(header: buildingImageView, content: {
@@ -45,6 +47,28 @@ struct BuildingDetailsView: View {
 		.padding(.bottom, -8)
 	}
 	
+	var carousel: some View {
+		TabView(selection: $imageIndex,
+						content:  {
+							Text("")
+								.tabItem {
+									Text("Tab Label 1")
+								}.tag(1)
+							Text("")
+								.tabItem {
+									Text("Tab Label 2")
+								}.tag(2)
+						}).tabViewStyle(PageTabViewStyle())
+	}
+	
+	func carouselImage(at index: Int) -> AnyView {
+		return AnyView (
+			Text("")
+				.tabItem {
+					Image("")
+				}.tag(index)
+		)
+	}
 	
 	var gradient: some View {
 		LinearGradient(gradient: Gradient(colors: [.gradiant3, .gradiant2, .gradiant1, .gradiant0]), startPoint: .bottom, endPoint: .center)

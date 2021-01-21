@@ -18,11 +18,13 @@ struct Building: Codable, Identifiable {
 	var funFacts: String = ""
 //	var longHistory: String = ""
 	var imageName: String = ""
-	
+	var imageCount: Int = 1
 	var id: Int {
 		number
 	}
-	
+	var latitude: Double = -180
+	var longitude: Double = -180
+		
 	static func debugBuilding() -> Building {
 		return Building(number: 42, name: "Test building"/*, short: "It's a building for testing"*/, history: "Just made it up now", function: "It's for testing layout", funFacts: "It's not a real building"/*, longHistory: "Just made it up on Sunday night"*/, imageName: "989484_5e3ee76a")
 	}

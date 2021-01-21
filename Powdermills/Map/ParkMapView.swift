@@ -9,8 +9,11 @@ import SwiftUI
 import Mapbox
 
 struct ParkMapView: View {
+	
+	var viewModel = BuildingListViewModel()
+	
 	var body: some View {
-		MapView(annotations: .constant([MGLPointAnnotation]()))
+		MapView(annotations: .constant([MGLPointAnnotation]()), viewModel: viewModel)
 			.centerCoordinate(.init(latitude: 51.893782, longitude: -8.590463)).zoomLevel(16)
 			
 	}
