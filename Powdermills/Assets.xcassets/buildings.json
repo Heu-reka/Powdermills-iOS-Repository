@@ -1,283 +1,282 @@
-{
-	"Buildings":{
-		"1": {
-			"Old": 1,
-			"App": "1",
-			"Building Name": "Incorporating Mill",
-			"Short History": "The original gunpowder mills had 4 Incorporating Mills. This was increased to 12 Incorporating mills by the next owners, the British Board of Ordnance, and finally to 24 Incorporating Mills by the third owners, Tobin & Horsfall.",
-			"Function": "An Incorporating Mill finely ground a mixture of saltpetre, sulphur and charcoal together to product crude gunpowder. The process used two heavy millstones to carry out the operation. The millstones were rotated by a mechanical system powered by a water wheel. ",
-			"Fun Facts": [
-				"The original Incorporating Mills buildings were made of wood and have not survived. The building you see today is a modern reconstruction built in 1993. The large stone walls you see in the Incorporating Mills area are blast walls to prevent an explosion in one set of the incorporating mills spreading to neighbouring incorporating mills."
-			],
-			"GPS Coordinates": "51.893755, -8.5898981",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1kDQsnuKE_2wojlBcBdv978anl_LAPf9F/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1r8aUf4a9l_bc0Ofi18pbDal496Jy500Z/view?usp=sharing"
-		},
-		"2": {
-			"Old": 37,
-			"App": "2",
-			"Building Name": "Cooperage No. 4",
-			"Short History": "A Cooper was a skilled craftsman who made barrels for gunpowder storage, or other wooden waterproof storage containers. The barrels were manufactured in a Cooperage building.",
-			"Function": "Gunpowder, both, in partly manufactured form and finished form was stored in watertight barrels. Each barrel was made up of about 8 specially shaped pieces of wood called staves to make the body of the barrel and 6-8 specially shaped pieces of wood for the top and bottom of the barrel. The barrel was held together by wooden hoops.  The standard barrel for gunpowder for sale contained about 45 kg of gunpowder.",
-			"Fun Facts": [
-				"About 50 Coopers were employed at the Gunpowder Mills. No iron could be used anywhere in the construction of the barrel because of the danger of a spark being created by scraping the iron on stone, or grit. "
-			],
-			"GPS Coordinates": "51.8940141, -8.591318",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1emfSQUCoU2Y3uVD0gGc0eDGnOgavo862/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1kVQSqj201EPRkRLQuayWCS1WTpsM-shr/view?usp=sharing"
-		},
-		"3": {
-			"Old": 35,
-			"App": "3",
-			"Building Name": "Charcoal Mill",
-			"Short History": "The charcoal mill was constructed by the original gunpowder mills owner Charles Henry Leslie in 1794. It continued to be used until the gunpowder mills were closed in 1903.",
-			"Function": "Charcoal was prepared from lengths of wood about 60 cm in length and 10 cm in diameter. They were heated in a very hot oven in a building called the Charcoal Burning House and then crushed and  ground to a fine powder in the Charcoal Mill. A waterwheel was used to drive the milling machinery.",
-			"Fun Facts": [
-				" Charcoal production in the ovens produced three other side products,Pyroligneous Acid, Tar and an Inflammable Gas. The Pyroligneous Acid was used as a wood preseravative, the Tar to coat the walls and floor of mill races to prevent erosion by the fast flowing water and the Infammable Gas was used to heat the charcoal ovens."
-			],
-			"GPS Coordinates": "51.894096, -8.590926",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1rqfsobtP2A2fwUCsXA4bPZiyuJLu8bUP/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/10biLTogiYE5b3H0spct4q4k7ohfSpAXK/view?usp=sharing"
-		},
-		"4": {
-			"Old": 36,
-			"App": "4",
-			"Building Name": "Millwright, Carpenters Shop & Copper Store",
-			"Short History": "The Millwright was a specialist who worked to build, repair and maintain the various water mills on the site used for the manufacture of gunpowder. The Carpenter built and repaired wooden buildings and structures. The Copper Store was used to store supplies of copper for tools and other items made of copper. Copper needed to be stored separately to ensure no iron materials were mixed with it.",
-			"Function": "The Millwright maintained the 20 Water powered process units on the site. There were about 33 wooden buildings on the site that were maintained by the carpenters. Machinery on the site also had wooden components that required maintainance by carpenters. Copper was the chosen metal for tools, screws, nails and hammers as it would not cause a spark in use. It needed to be carefully segregated from iron materials for  safety reasons.",
-			"Fun Facts": [],
-			"GPS Coordinates": "51.894130999999994, -8.591888299999999",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1egIEqT6omxygcro_t2tqcx1XX40VewHL/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1KvajT3-ccaJ0zrj6XYcIa7SB1koQuU_N/view?usp=sharing"
-		},
-		"5": {
-			"Old": 40,
-			"App": "5",
-			"Building Name": "Weighbridge",
-			"Short History": "The weighbridge was installed around 1807 by the British Board of Ordnance.",
-			"Function": "A weighbridge is a weighing machine on which loaded carts may be weighed by driving the cart onto a metal plate flush with the road. It was used to weigh materials purchased by the gunpowder mills,  and barrels of gunpowder being sold to customers.",
-			"Fun Facts": [
-				"The Weigh Bridge currently on the site is a replacement installed in the mid 19th century for the original weighbridge installed by the British Board of Ordnance around 1807."
-			],
-			"GPS Coordinates": "51.893960299999996, -8.5918849",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1Cpeumj7kTs5xipNdf3M4TYc1FtI9z0tw/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1xeyqAqTUDunD3Q_sBArRvLIkThCYougj/view?usp=sharing"
-		},
-		"6": {
-			"Old": 49,
-			"App": "6",
-			"Building Name": "New Sawmill",
-			"Short History": "A sawmill was required on the site to cut and shape wood for various uses such as, the construction of wooden buildings, wooden supports for machinery and for producing barrels for storing gunpowder. A sawmill  existed on the site since about 1807. A new sawmill was built around 1870 to supplement the output of the original sawmill.",
-			"Function": "At peak production in the Ballincollig Gunpowder Mills about 80 gunpowder storage barrels needed to be produced per day. The new sawmill was powered by an internal combustion engine, the only nonwater powered machinery on the site.",
-			"Fun Facts": [],
-			"GPS Coordinates": "51.8938926, -8.5930581",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1MDIdyPnB042zmkIYSZrXhNbMnQ_TPjH_/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1ziZTM44QA_-sXaLPwBLAYjwW5L2UnZxm/view?usp=sharing"
-		},
-		"7": {
-			"Old": 50,
-			"App": "7",
-			"Building Name": "Brimstone Refinery",
-			"Short History": "The Sulphur (also called 'Brimstone') needed to be purified before use. This was carried out by distilling the crude purchased sulphur in a process similar to the making of whiskey but at a much higher temperature.",
-			"Function": "Sulphur is added to gunpowder to made the gunpowder easier to ignite. ",
-			"Fun Facts": [
-				"Gunpowder was composed of 10% sulphur."
-			],
-			"GPS Coordinates": "51.893774, -8.592726",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1IiVsY7xd_dQwfyh11yl3foUSMS7HNd8s/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1v959P5sYdM8gf-RJwaUBFKpprm-0kvp9/view?usp=sharing"
-		},
-		"8": {
-			"Old": 52,
-			"App": "8",
-			"Building Name": "Saltpetre Refinery",
-			"Short History": "The Saltpetre (whose chemical name is 'Potassium Nitrate') used in the Ballincollig gunpowder mills was obtained from Bengal, in east India.  Saltpetre is a natural material produced by bacterial decomposition of animal waste. An impure Saltpetre was imported. The Saltpetre refinery needed to purify the material so that it was 99.99% pure to be suitable for use in gunpowder manufacture.",
-			"Function": "The refinery process consisted of  dissolving the Saltpetre in hot water, removing small stones and earth by passing the hot liquid through a filter and then allowed the hot liquid to cool. The cooling caused crystals of pure Saltpetre to form. The crystals were then removed from the cold liquid.",
-			"Fun Facts": [
-				"Gunpowder consisted of 75% of Saltpetre. About 4,000 kg of pure Saltpetre were required to be refined per day."
-			],
-			"GPS Coordinates": "51.8934755, -8.5932123",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1HigAxbKHnTyKrAEFoLmjNKK80cZKgCKv/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1C6XmLtJIIX41gBJkFJ95m929PJH4_C3b/view?usp=sharing"
-		},
-		"9": {
-			"Old": 67,
-			"App": "9",
-			"Building Name": "Dust House No. 2",
-			"Short History": "The process of granulating the pressed gunpowder generated a lot of gunpowder dust. This had to be removed to make the gunpowder suitable for use.",
-			"Function": "The gunpowder dust was removed by passing the granulated gunpowder through a fine screen that retained the granulated gunpowder and allowed the gunpowder dust to pass through the screen. The removed dust was recycled back to the Incorporating Mills.",
-			"Fun Facts": [
-				"Gunpowder dust was very dangerous and easily ignited and had to be very carefully managed to prevent an explosion."
-			],
-			"GPS Coordinates": "51.893859899999995, -8.595510599999999",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1vRiRFaGlvPuwKb9Uydna7eISX5Nhh6kY/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1MAN9zWrI78cHlNx75Jf9D8WmUGiipcXQ/view?usp=sharing"
-		},
-		"10": {
-			"Old": 68,
-			"App": "10",
-			"Building Name": "New Magazine No. 1",
-			"Short History": "The manufactured gunpowder was stored in wooden barrels in a Gunpowder Magazine. Due to the increased gunpowder production capacity by the Horsfall and Tobin owners a new gunpowder magazine had to be constructed around 1835.",
-			"Function": "The gunpowder produced at the gunpowder mills was stored in barrels generally containing 45 kg of gunpowder. The barrels were stored in a magazine before being shipped to customers.  Having large quantities of gunpowder stored was a significant hazard. ",
-			"Fun Facts": [
-				"Magazine: Is an Arabic word meaning storehouse (مخزن)."
-			],
-			"GPS Coordinates": "51.893856, -8.596902",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1Ky8fZNuEBdPY-XbYIRK6HNBwmVmPdBR8/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1wGpyYkwsV7HJplcfehhWibWhvLy7HdMQ/view?usp=sharing"
-		},
-		"11": {
-			"Old": 70,
-			"App": "11",
-			"Building Name": "Drying House",
-			"Short History": "A small quantity of water was added to the crude gunpowder mixture being processed in the Incorporating Mills. This was to mimimise dust formed in the Incorporation process and to act as a binder for the incorporated gunpowder. The added water need to be removed in the last stage of the gunpowder manufacturing process. ",
-			"Function": "Water was boiled in a copper vessel to produce steam using a coal fire to heat the water. The steam produced was fed through a pipe system to a gunpowder drying room. The pipes in the drying room were similar to a domestic radiator. The gunpowder to be dried was placed in open shallow trays and dried for a number of hours before being put into barrels for storage in the Gunpowder Magazine.",
-			"Fun Facts": [
-				"The gunpowder was dried at about 45 C."
-			],
-			"GPS Coordinates": "51.893233, -8.599367",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1O9O8l2eBesieQhmdPto-2UMkSS8oQAEi/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1-WkNxwbjbSR59KOoDkRs7O7R4xCiNuQs/view?usp=sharing"
-		},
-		"12": {
-			"Old": 74,
-			"App": "12",
-			"Building Name": "Expense Magazine No.1",
-			"Short History": "The Expense Magazine was used to store small quantities of partly manufactured gunpowder pending their further processing. ",
-			"Function": "Partially manufactured gunpowder was moved by boat on the main canal in the gunpowder mills site. This was done to mimimise the risk of explosion while moving the material from process to process. The Powder Boats, as they were called, were pulled by a pony with a harness connected to the powder boat by a rope and steered by a gunpowderman in the boat.",
-			"Fun Facts": [
-				" The use of the word “Expense” is an outdated use of the English word expense meaning ‘part of’ and not the complete amount."
-			],
-			"GPS Coordinates": "51.892421, -8.605116",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/11sx-z8AKgMhMhk_ler-7lA-8bjBhOYM7/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1NHfvWxkn4H_L_m0iOblW0CR_Z2Eq7EZX/view?usp=sharing"
-		},
-		"13": {
-			"Old": 76,
-			"App": "13",
-			"Building Name": "Press House No.1",
-			"Short History": "The gunpowder from the incorporating mills was placed in thin layers between copper sheets and a large pressure applied to the sheets to produced a hard ‘Gunpowder Biscuit’ about 0.6 metres square.",
-			"Function": "The high pressure necessary to form the gunpowder 'biscuits' was obtained by means of a water wheel powered hydraulic press.",
-			"Fun Facts": [
-				"The pressure used was about 80 kg/square cm (or equivalent to someone standing with all their weigh on the nail of your little finger!!)"
-			],
-			"GPS Coordinates": "51.892100, -8.607928",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/18U7PbPs3z9_mzUhax27sTNF99c-ZGyWn/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1bAY9G4rjdQEe2OqEYksdQEEvsYVG_qkn/view?usp=sharing"
-		},
-		"14": {
-			"Old": 80,
-			"App": "14",
-			"Building Name": "Corning House No.1",
-			"Short History": "It was discovered that the most efficient form of gunpowder consisted of small pieces of gunpowder which were referred to as “Gunpowder Corns”. The name originating from the size of the pieces of gunpowder being similar to barley, or wheat, corns.",
-			"Function": "Different sized gunpowder corns were manufactured. Larger corn sizes were used for artillery and smaller corn sizes for rifles, or pistols.",
-			"Fun Facts": [],
-			"GPS Coordinates": "",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1nN5L_TRB0z_IYb58jCJbx9KSFy9W2gfC/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1oMjGES3Ueu7Ws4jDD9y4-CHIiDsu4Znf/view?usp=sharing"
-		},
-		"15": {
-			"Old": 84,
-			"App": "15",
-			"Building Name": "Watchman's House",
-			"Short History": "Due to the dangerous nature of gunpowder manufacturing it was important that a strict control of personnel entering the site was maintained.",
-			"Function": "There were a number of Watchman’s houses on the Gunpowder Mills site. Their purpose was to to ensure that no unauthorised visitors entered the site. ",
-			"Fun Facts": [
-				"The circular structure of this Watchmans House is unusual, as is the fluted design of the walls. This was the original design built by the British Board of Ordnance. The rectangular house was added to the circular watchhouse during the Horsfall and Tobin ownership. There are no other circular Watchmans houses on the site."
-			],
-			"GPS Coordinates": "51.889414, -8.621125",
-			"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-			"Other Images": [
-				"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
-				"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
-			],
-			"Building Icon Android": "https://drive.google.com/file/d/1Cfk81pSMKZKojpRrrG6L40Aq55Mgbl9o/view?usp=sharing",
-			"Building Icon iOS": "https://drive.google.com/file/d/1cJxtHtXSsv4pM561H-XXa2ab9iXTGp3G/view?usp=sharing"
-		}
+[
+	{
+		"Old": 1,
+		"App": "1",
+		"Building Name": "Incorporating Mill",
+		"Short History": "The original gunpowder mills had 4 Incorporating Mills. This was increased to 12 Incorporating mills by the next owners, the British Board of Ordnance, and finally to 24 Incorporating Mills by the third owners, Tobin & Horsfall.",
+		"Function": "An Incorporating Mill finely ground a mixture of saltpetre, sulphur and charcoal together to product crude gunpowder. The process used two heavy millstones to carry out the operation. The millstones were rotated by a mechanical system powered by a water wheel. ",
+		"Fun Facts": [
+			"The original Incorporating Mills buildings were made of wood and have not survived. The building you see today is a modern reconstruction built in 1993. The large stone walls you see in the Incorporating Mills area are blast walls to prevent an explosion in one set of the incorporating mills spreading to neighbouring incorporating mills."
+		],
+		"GPS Coordinates": "51.893755, -8.5898981",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1kDQsnuKE_2wojlBcBdv978anl_LAPf9F/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1r8aUf4a9l_bc0Ofi18pbDal496Jy500Z/view?usp=sharing"
+	},
+	{
+		"Old": 37,
+		"App": "2",
+		"Building Name": "Cooperage No. 4",
+		"Short History": "A Cooper was a skilled craftsman who made barrels for gunpowder storage, or other wooden waterproof storage containers. The barrels were manufactured in a Cooperage building.",
+		"Function": "Gunpowder, both, in partly manufactured form and finished form was stored in watertight barrels. Each barrel was made up of about 8 specially shaped pieces of wood called staves to make the body of the barrel and 6-8 specially shaped pieces of wood for the top and bottom of the barrel. The barrel was held together by wooden hoops.  The standard barrel for gunpowder for sale contained about 45 kg of gunpowder.",
+		"Fun Facts": [
+			"About 50 Coopers were employed at the Gunpowder Mills. No iron could be used anywhere in the construction of the barrel because of the danger of a spark being created by scraping the iron on stone, or grit. "
+		],
+		"GPS Coordinates": "51.8940141, -8.591318",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1emfSQUCoU2Y3uVD0gGc0eDGnOgavo862/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1kVQSqj201EPRkRLQuayWCS1WTpsM-shr/view?usp=sharing"
+	},
+	{
+		"Old": 35,
+		"App": "3",
+		"Building Name": "Charcoal Mill",
+		"Short History": "The charcoal mill was constructed by the original gunpowder mills owner Charles Henry Leslie in 1794. It continued to be used until the gunpowder mills were closed in 1903.",
+		"Function": "Charcoal was prepared from lengths of wood about 60 cm in length and 10 cm in diameter. They were heated in a very hot oven in a building called the Charcoal Burning House and then crushed and  ground to a fine powder in the Charcoal Mill. A waterwheel was used to drive the milling machinery.",
+		"Fun Facts": [
+			" Charcoal production in the ovens produced three other side products,Pyroligneous Acid, Tar and an Inflammable Gas. The Pyroligneous Acid was used as a wood preseravative, the Tar to coat the walls and floor of mill races to prevent erosion by the fast flowing water and the Infammable Gas was used to heat the charcoal ovens."
+		],
+		"GPS Coordinates": "51.894096, -8.590926",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1rqfsobtP2A2fwUCsXA4bPZiyuJLu8bUP/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/10biLTogiYE5b3H0spct4q4k7ohfSpAXK/view?usp=sharing"
+	},
+	{
+		"Old": 36,
+		"App": "4",
+		"Building Name": "Millwright, Carpenters Shop & Copper Store",
+		"Short History": "The Millwright was a specialist who worked to build, repair and maintain the various water mills on the site used for the manufacture of gunpowder. The Carpenter built and repaired wooden buildings and structures. The Copper Store was used to store supplies of copper for tools and other items made of copper. Copper needed to be stored separately to ensure no iron materials were mixed with it.",
+		"Function": "The Millwright maintained the 20 Water powered process units on the site. There were about 33 wooden buildings on the site that were maintained by the carpenters. Machinery on the site also had wooden components that required maintainance by carpenters. Copper was the chosen metal for tools, screws, nails and hammers as it would not cause a spark in use. It needed to be carefully segregated from iron materials for  safety reasons.",
+		"Fun Facts": [],
+		"GPS Coordinates": "51.894130999999994, -8.591888299999999",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1egIEqT6omxygcro_t2tqcx1XX40VewHL/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1KvajT3-ccaJ0zrj6XYcIa7SB1koQuU_N/view?usp=sharing"
+	},
+	{
+		"Old": 40,
+		"App": "5",
+		"Building Name": "Weighbridge",
+		"Short History": "The weighbridge was installed around 1807 by the British Board of Ordnance.",
+		"Function": "A weighbridge is a weighing machine on which loaded carts may be weighed by driving the cart onto a metal plate flush with the road. It was used to weigh materials purchased by the gunpowder mills,  and barrels of gunpowder being sold to customers.",
+		"Fun Facts": [
+			"The Weigh Bridge currently on the site is a replacement installed in the mid 19th century for the original weighbridge installed by the British Board of Ordnance around 1807."
+		],
+		"GPS Coordinates": "51.893960299999996, -8.5918849",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1Cpeumj7kTs5xipNdf3M4TYc1FtI9z0tw/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1xeyqAqTUDunD3Q_sBArRvLIkThCYougj/view?usp=sharing"
+	},
+	{
+		"Old": 49,
+		"App": "6",
+		"Building Name": "New Sawmill",
+		"Short History": "A sawmill was required on the site to cut and shape wood for various uses such as, the construction of wooden buildings, wooden supports for machinery and for producing barrels for storing gunpowder. A sawmill  existed on the site since about 1807. A new sawmill was built around 1870 to supplement the output of the original sawmill.",
+		"Function": "At peak production in the Ballincollig Gunpowder Mills about 80 gunpowder storage barrels needed to be produced per day. The new sawmill was powered by an internal combustion engine, the only nonwater powered machinery on the site.",
+		"Fun Facts": [],
+		"GPS Coordinates": "51.8938926, -8.5930581",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1MDIdyPnB042zmkIYSZrXhNbMnQ_TPjH_/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1ziZTM44QA_-sXaLPwBLAYjwW5L2UnZxm/view?usp=sharing"
+	},
+	{
+		"Old": 50,
+		"App": "7",
+		"Building Name": "Brimstone Refinery",
+		"Short History": "The Sulphur (also called 'Brimstone') needed to be purified before use. This was carried out by distilling the crude purchased sulphur in a process similar to the making of whiskey but at a much higher temperature.",
+		"Function": "Sulphur is added to gunpowder to made the gunpowder easier to ignite. ",
+		"Fun Facts": [
+			"Gunpowder was composed of 10% sulphur."
+		],
+		"GPS Coordinates": "51.893774, -8.592726",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1IiVsY7xd_dQwfyh11yl3foUSMS7HNd8s/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1v959P5sYdM8gf-RJwaUBFKpprm-0kvp9/view?usp=sharing"
+	},
+	{
+		"Old": 52,
+		"App": "8",
+		"Building Name": "Saltpetre Refinery",
+		"Short History": "The Saltpetre (whose chemical name is 'Potassium Nitrate') used in the Ballincollig gunpowder mills was obtained from Bengal, in east India.  Saltpetre is a natural material produced by bacterial decomposition of animal waste. An impure Saltpetre was imported. The Saltpetre refinery needed to purify the material so that it was 99.99% pure to be suitable for use in gunpowder manufacture.",
+		"Function": "The refinery process consisted of  dissolving the Saltpetre in hot water, removing small stones and earth by passing the hot liquid through a filter and then allowed the hot liquid to cool. The cooling caused crystals of pure Saltpetre to form. The crystals were then removed from the cold liquid.",
+		"Fun Facts": [
+			"Gunpowder consisted of 75% of Saltpetre. About 4,000 kg of pure Saltpetre were required to be refined per day."
+		],
+		"GPS Coordinates": "51.8934755, -8.5932123",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1HigAxbKHnTyKrAEFoLmjNKK80cZKgCKv/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1C6XmLtJIIX41gBJkFJ95m929PJH4_C3b/view?usp=sharing"
+	},
+	{
+		"Old": 67,
+		"App": "9",
+		"Building Name": "Dust House No. 2",
+		"Short History": "The process of granulating the pressed gunpowder generated a lot of gunpowder dust. This had to be removed to make the gunpowder suitable for use.",
+		"Function": "The gunpowder dust was removed by passing the granulated gunpowder through a fine screen that retained the granulated gunpowder and allowed the gunpowder dust to pass through the screen. The removed dust was recycled back to the Incorporating Mills.",
+		"Fun Facts": [
+			"Gunpowder dust was very dangerous and easily ignited and had to be very carefully managed to prevent an explosion."
+		],
+		"GPS Coordinates": "51.893859899999995, -8.595510599999999",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1vRiRFaGlvPuwKb9Uydna7eISX5Nhh6kY/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1MAN9zWrI78cHlNx75Jf9D8WmUGiipcXQ/view?usp=sharing"
+	},
+	{
+		"Old": 68,
+		"App": "10",
+		"Building Name": "New Magazine No. 1",
+		"Short History": "The manufactured gunpowder was stored in wooden barrels in a Gunpowder Magazine. Due to the increased gunpowder production capacity by the Horsfall and Tobin owners a new gunpowder magazine had to be constructed around 1835.",
+		"Function": "The gunpowder produced at the gunpowder mills was stored in barrels generally containing 45 kg of gunpowder. The barrels were stored in a magazine before being shipped to customers.  Having large quantities of gunpowder stored was a significant hazard. ",
+		"Fun Facts": [
+			"Magazine: Is an Arabic word meaning storehouse (مخزن)."
+		],
+		"GPS Coordinates": "51.893856, -8.596902",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1Ky8fZNuEBdPY-XbYIRK6HNBwmVmPdBR8/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1wGpyYkwsV7HJplcfehhWibWhvLy7HdMQ/view?usp=sharing"
+	},
+	{
+		"Old": 70,
+		"App": "11",
+		"Building Name": "Drying House",
+		"Short History": "A small quantity of water was added to the crude gunpowder mixture being processed in the Incorporating Mills. This was to mimimise dust formed in the Incorporation process and to act as a binder for the incorporated gunpowder. The added water need to be removed in the last stage of the gunpowder manufacturing process. ",
+		"Function": "Water was boiled in a copper vessel to produce steam using a coal fire to heat the water. The steam produced was fed through a pipe system to a gunpowder drying room. The pipes in the drying room were similar to a domestic radiator. The gunpowder to be dried was placed in open shallow trays and dried for a number of hours before being put into barrels for storage in the Gunpowder Magazine.",
+		"Fun Facts": [
+			"The gunpowder was dried at about 45 C."
+		],
+		"GPS Coordinates": "51.893233, -8.599367",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1O9O8l2eBesieQhmdPto-2UMkSS8oQAEi/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1-WkNxwbjbSR59KOoDkRs7O7R4xCiNuQs/view?usp=sharing"
+	},
+	{
+		"Old": 74,
+		"App": "12",
+		"Building Name": "Expense Magazine No.1",
+		"Short History": "The Expense Magazine was used to store small quantities of partly manufactured gunpowder pending their further processing. ",
+		"Function": "Partially manufactured gunpowder was moved by boat on the main canal in the gunpowder mills site. This was done to mimimise the risk of explosion while moving the material from process to process. The Powder Boats, as they were called, were pulled by a pony with a harness connected to the powder boat by a rope and steered by a gunpowderman in the boat.",
+		"Fun Facts": [
+			" The use of the word “Expense” is an outdated use of the English word expense meaning ‘part of’ and not the complete amount."
+		],
+		"GPS Coordinates": "51.892421, -8.605116",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/11sx-z8AKgMhMhk_ler-7lA-8bjBhOYM7/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1NHfvWxkn4H_L_m0iOblW0CR_Z2Eq7EZX/view?usp=sharing"
+	},
+	{
+		"Old": 76,
+		"App": "13",
+		"Building Name": "Press House No.1",
+		"Short History": "The gunpowder from the incorporating mills was placed in thin layers between copper sheets and a large pressure applied to the sheets to produced a hard ‘Gunpowder Biscuit’ about 0.6 metres square.",
+		"Function": "The high pressure necessary to form the gunpowder 'biscuits' was obtained by means of a water wheel powered hydraulic press.",
+		"Fun Facts": [
+			"The pressure used was about 80 kg/square cm (or equivalent to someone standing with all their weigh on the nail of your little finger!!)"
+		],
+		"GPS Coordinates": "51.892100, -8.607928",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/18U7PbPs3z9_mzUhax27sTNF99c-ZGyWn/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1bAY9G4rjdQEe2OqEYksdQEEvsYVG_qkn/view?usp=sharing"
+	},
+	{
+		"Old": 80,
+		"App": "14",
+		"Building Name": "Corning House No.1",
+		"Short History": "It was discovered that the most efficient form of gunpowder consisted of small pieces of gunpowder which were referred to as “Gunpowder Corns”. The name originating from the size of the pieces of gunpowder being similar to barley, or wheat, corns.",
+		"Function": "Different sized gunpowder corns were manufactured. Larger corn sizes were used for artillery and smaller corn sizes for rifles, or pistols.",
+		"Fun Facts": [],
+		"GPS Coordinates": "",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1nN5L_TRB0z_IYb58jCJbx9KSFy9W2gfC/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1oMjGES3Ueu7Ws4jDD9y4-CHIiDsu4Znf/view?usp=sharing"
+	},
+	{
+		"Old": 84,
+		"App": "15",
+		"Building Name": "Watchman's House",
+		"Short History": "Due to the dangerous nature of gunpowder manufacturing it was important that a strict control of personnel entering the site was maintained.",
+		"Function": "There were a number of Watchman’s houses on the Gunpowder Mills site. Their purpose was to to ensure that no unauthorised visitors entered the site. ",
+		"Fun Facts": [
+			"The circular structure of this Watchmans House is unusual, as is the fluted design of the walls. This was the original design built by the British Board of Ordnance. The rectangular house was added to the circular watchhouse during the Horsfall and Tobin ownership. There are no other circular Watchmans houses on the site."
+		],
+		"GPS Coordinates": "51.889414, -8.621125",
+		"Cover": "https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+		"Other Images": [
+			"https://www.corkcoco.ie/sites/default/files/inline-images/countyhallchamiah-4.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/GOUGANE%20BARRA.jpg",
+			"https://www.corkcoco.ie/sites/default/files/inline-images/Doneraile%20Park%20%26%20Gardens_2_0.jpg"
+		],
+		"Building Icon Android": "https://drive.google.com/file/d/1Cfk81pSMKZKojpRrrG6L40Aq55Mgbl9o/view?usp=sharing",
+		"Building Icon iOS": "https://drive.google.com/file/d/1cJxtHtXSsv4pM561H-XXa2ab9iXTGp3G/view?usp=sharing"
 	}
-}
+	
+]

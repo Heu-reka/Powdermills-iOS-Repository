@@ -24,6 +24,7 @@ struct BuildingSubtitleView: View {
 					.padding(.top, 50)
 			}
 			Text(text)
+				.font(Font.custom("OpenSans-Regular", size: 21))
 				.foregroundColor(textColor)
 				.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
 				.padding(.bottom, 15)

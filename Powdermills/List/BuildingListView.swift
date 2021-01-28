@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import  Combine
 
 struct BuildingListView: View {
-	var viewModel = BuildingListViewModel()
+	@ObservedObject var viewModel: BuildingListViewModel
+	
 	var body: some View {
 		ScrollView(.vertical) {
 			LazyVStack(alignment: .center, spacing: 0, content: {
@@ -22,7 +24,7 @@ struct BuildingListView: View {
 
 struct BuildingListView_Previews: PreviewProvider {
 	static var previews: some View {
-		BuildingListView()
+		BuildingListView(viewModel: BuildingListViewModel())
 	}
 }
 
@@ -41,13 +43,13 @@ struct BuildingListViewItem: View {
 }
 
 class BuildingListViewItemModel: Identifiable {
-	var building: Building
+	var building: FSBuilding
 	var detailsViewModel: BuildingDetailsViewModel
 	var id: Int {
-		return building.number
+		return building.orders
 	}
 	
-	init(building: Building) {
+	init(building: FSBuilding) {
 		self.building = building
 		self.detailsViewModel = BuildingDetailsViewModel(building: building)
 	}

@@ -16,17 +16,22 @@
 		B4275BBA24FB924E00739741 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4275BB924FB924E00739741 /* Preview Assets.xcassets */; };
 		B4275BC524FB924E00739741 /* PowdermillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BC424FB924E00739741 /* PowdermillsTests.swift */; };
 		B4275BD024FB924E00739741 /* PowdermillsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BCF24FB924E00739741 /* PowdermillsUITests.swift */; };
+		B455787325C343CE00EDEC14 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B455787225C343CE00EDEC14 /* OpenSans-Regular.ttf */; };
+		B455789025C3445900EDEC14 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B455788F25C3445900EDEC14 /* OpenSans-SemiBold.ttf */; };
+		B455789525C34A3B00EDEC14 /* BebasNeue Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B455789425C34A3B00EDEC14 /* BebasNeue Bold.ttf */; };
 		B469D3F3250FDBBE00DA919C /* BuildingDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469D3F2250FDBBE00DA919C /* BuildingDetailsView.swift */; };
 		B469D3F5250FDBCC00DA919C /* BuildingDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469D3F4250FDBCC00DA919C /* BuildingDetailsViewModel.swift */; };
+		B480817225BA23B600BDBB75 /* BuildingUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480817125BA23B600BDBB75 /* BuildingUploader.swift */; };
 		B4A98A5F250EC04C0087F3E8 /* BuildingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A5E250EC04C0087F3E8 /* BuildingListView.swift */; };
 		B4A98A61250EC0650087F3E8 /* BuildingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A60250EC0650087F3E8 /* BuildingListViewModel.swift */; };
-		B4A98A64250EC0850087F3E8 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A63250EC0850087F3E8 /* Building.swift */; };
+		B4A98A64250EC0850087F3E8 /* JSONBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A63250EC0850087F3E8 /* JSONBuilding.swift */; };
 		B4A98A66250EC1BC0087F3E8 /* buildings.json in Resources */ = {isa = PBXBuildFile; fileRef = B4A98A65250EC1BC0087F3E8 /* buildings.json */; };
 		B4A98A68250EC2DB0087F3E8 /* BuildingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A67250EC2DB0087F3E8 /* BuildingsTests.swift */; };
 		B4A98A6A250EC5FC0087F3E8 /* BuildingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A69250EC5FC0087F3E8 /* BuildingRowView.swift */; };
 		B4A98A6D250EC9910087F3E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A6C250EC9910087F3E8 /* HomeView.swift */; };
 		B4A98A6F250EC9990087F3E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A6E250EC9990087F3E8 /* HomeViewModel.swift */; };
 		B4AE0EB6257EA47800ED1962 /* BuildingSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE0EB5257EA47800ED1962 /* BuildingSubtitleView.swift */; };
+		B4AE4B5525BA123600D62BF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4AE4B5425BA123600D62BF0 /* GoogleService-Info.plist */; };
 		B4C43D9E0002F5459E4E6C3F /* Pods_PowdermillsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F4CD6FD790EF97C6647D33 /* Pods_PowdermillsTests.framework */; };
 		B4DCBD962559D7B30099D08A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCBD952559D7B30099D08A /* MapView.swift */; };
 		B4DCBD9E2559D7E80099D08A /* ParkMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCBD9D2559D7E80099D08A /* ParkMapView.swift */; };
@@ -71,17 +76,22 @@
 		B4275BCB24FB924E00739741 /* PowdermillsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowdermillsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4275BCF24FB924E00739741 /* PowdermillsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowdermillsUITests.swift; sourceTree = "<group>"; };
 		B4275BD124FB924E00739741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B455787225C343CE00EDEC14 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		B455788F25C3445900EDEC14 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		B455789425C34A3B00EDEC14 /* BebasNeue Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue Bold.ttf"; sourceTree = "<group>"; };
 		B469D3F2250FDBBE00DA919C /* BuildingDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDetailsView.swift; sourceTree = "<group>"; };
 		B469D3F4250FDBCC00DA919C /* BuildingDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDetailsViewModel.swift; sourceTree = "<group>"; };
+		B480817125BA23B600BDBB75 /* BuildingUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingUploader.swift; sourceTree = "<group>"; };
 		B4A98A5E250EC04C0087F3E8 /* BuildingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingListView.swift; sourceTree = "<group>"; };
 		B4A98A60250EC0650087F3E8 /* BuildingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingListViewModel.swift; sourceTree = "<group>"; };
-		B4A98A63250EC0850087F3E8 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		B4A98A63250EC0850087F3E8 /* JSONBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBuilding.swift; sourceTree = "<group>"; };
 		B4A98A65250EC1BC0087F3E8 /* buildings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = buildings.json; path = Assets.xcassets/buildings.json; sourceTree = "<group>"; };
 		B4A98A67250EC2DB0087F3E8 /* BuildingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsTests.swift; sourceTree = "<group>"; };
 		B4A98A69250EC5FC0087F3E8 /* BuildingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingRowView.swift; sourceTree = "<group>"; };
 		B4A98A6C250EC9910087F3E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B4A98A6E250EC9990087F3E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B4AE0EB5257EA47800ED1962 /* BuildingSubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingSubtitleView.swift; sourceTree = "<group>"; };
+		B4AE4B5425BA123600D62BF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B4DCBD952559D7B30099D08A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B4DCBD9D2559D7E80099D08A /* ParkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapView.swift; sourceTree = "<group>"; };
 		B5EDAFAB896D4F7B51ABC99A /* Pods_Powdermills_PowdermillsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Powdermills_PowdermillsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +166,8 @@
 		B4275BB124FB924D00739741 /* Powdermills */ = {
 			isa = PBXGroup;
 			children = (
+				B455787125C343BD00EDEC14 /* Fonts */,
+				B480817025BA23A900BDBB75 /* Utils */,
 				B4DCBD942559D7A70099D08A /* Map */,
 				B469D3F1250FDBB000DA919C /* Details */,
 				B4A98A6B250EC9790087F3E8 /* Navigation */,
@@ -168,6 +180,7 @@
 				C23BA8DC2550A597002EE7F4 /* terms-and-conditions.txt */,
 				B4A98A65250EC1BC0087F3E8 /* buildings.json */,
 				B4275BBB24FB924E00739741 /* Info.plist */,
+				B4AE4B5425BA123600D62BF0 /* GoogleService-Info.plist */,
 				B4275BB824FB924E00739741 /* Preview Content */,
 				B418449A253CCE65008247B7 /* Colors.swift */,
 			);
@@ -201,6 +214,16 @@
 			path = PowdermillsUITests;
 			sourceTree = "<group>";
 		};
+		B455787125C343BD00EDEC14 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B455789425C34A3B00EDEC14 /* BebasNeue Bold.ttf */,
+				B455788F25C3445900EDEC14 /* OpenSans-SemiBold.ttf */,
+				B455787225C343CE00EDEC14 /* OpenSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B469D3F1250FDBB000DA919C /* Details */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +232,14 @@
 				B4AE0EB5257EA47800ED1962 /* BuildingSubtitleView.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		B480817025BA23A900BDBB75 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B480817125BA23B600BDBB75 /* BuildingUploader.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		B4A98A5D250EC03F0087F3E8 /* List */ = {
@@ -224,7 +255,7 @@
 		B4A98A62250EC0750087F3E8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B4A98A63250EC0850087F3E8 /* Building.swift */,
+				B4A98A63250EC0850087F3E8 /* JSONBuilding.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -378,8 +409,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C23BA8DD2550A597002EE7F4 /* terms-and-conditions.txt in Resources */,
+				B455789525C34A3B00EDEC14 /* BebasNeue Bold.ttf in Resources */,
 				B4275BBA24FB924E00739741 /* Preview Assets.xcassets in Resources */,
+				B455789025C3445900EDEC14 /* OpenSans-SemiBold.ttf in Resources */,
+				B4AE4B5525BA123600D62BF0 /* GoogleService-Info.plist in Resources */,
 				B4A98A66250EC1BC0087F3E8 /* buildings.json in Resources */,
+				B455787325C343CE00EDEC14 /* OpenSans-Regular.ttf in Resources */,
 				B4275BB724FB924E00739741 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,7 +556,8 @@
 				B4AE0EB6257EA47800ED1962 /* BuildingSubtitleView.swift in Sources */,
 				B418449B253CCE65008247B7 /* Colors.swift in Sources */,
 				C2BF6419252A791C0033DDDD /* TermsAndConditionsText.swift in Sources */,
-				B4A98A64250EC0850087F3E8 /* Building.swift in Sources */,
+				B4A98A64250EC0850087F3E8 /* JSONBuilding.swift in Sources */,
+				B480817225BA23B600BDBB75 /* BuildingUploader.swift in Sources */,
 				B4A98A5F250EC04C0087F3E8 /* BuildingListView.swift in Sources */,
 				B4275BB324FB924D00739741 /* PowdermillsApp.swift in Sources */,
 			);

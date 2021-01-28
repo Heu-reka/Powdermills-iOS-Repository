@@ -6,19 +6,43 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct HomeView: View {
 	@ObservedObject var viewModel = HomeViewModel()
 	
 	@State var showTermsAndConditions = false
 	
+	@State var uploadedBuildings = false
+	
 	var body: some View {
-		if viewModel.state == .list {
-			vstackMode
-		} else {
-			ParkMapView()
-				.navigationBarTitle("Map", displayMode: .inline)
+		VStack {
+			headerView
+			if viewModel.state == .list {
+				vstackMode
+			} else {
+				ParkMapView(viewModel: viewModel.listViewModel)
+					.navigationBarTitle("Map", displayMode: .inline)
+			}
 		}
+	}
+	
+	var headerView: some View {
+		ZStack {
+			Color.titleBackgroundColor
+				.edgesIgnoringSafeArea(.all)
+				Text("POWDERMILLS")
+					.font(Font.custom("BebasNeue Bold", size: 30))
+					.foregroundColor(.titleTextColor)
+			HStack {
+				modeButton
+					.padding()
+					.frame(alignment: .leading)
+				Spacer()
+			}
+			
+		}.frame(height: 48, alignment: .center)
+		
 	}
 	
 	var vstackMode: some View {
@@ -47,7 +71,7 @@ struct HomeView: View {
 			viewModel.objectWillChange.send()
 			viewModel.state.toggle()
 		}) {
-			Image(systemName: viewModel.state.buttonImage())
+			Image(viewModel.state.buttonImage())
 		}
 	}
 	
@@ -59,6 +83,13 @@ struct HomeView: View {
 		}.fullScreenCover(isPresented: self.$showTermsAndConditions, content: {
 			TermsAndConditionsView()
 		})
+	}
+	
+	var uploadBuildingsButton: some View {
+			Button("Upload all buildings") {
+				uploadedBuildings = true
+				BuildingUploader.sharedInstance.addJSONBuildingsToFirestore()
+			}.disabled(uploadedBuildings)
 	}
 }
 

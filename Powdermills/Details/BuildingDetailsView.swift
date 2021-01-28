@@ -6,59 +6,89 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct BuildingDetailsView: View {
 	var viewModel: BuildingDetailsViewModel
 	
 	@State var imageIndex: Int = 0
+	@Environment(\.presentationMode) var presentationMode
 	
 	var body: some View {
 		ScrollView {
-			Section(header: buildingImageView, content: {
-				history
-				function
-				if viewModel.building.funFacts.count > 0 {
-					trivia
-				}
-			})
+			Section(header:
+								buildingImageView
+									.frame(height: 209, alignment: .center),
+							content: {
+								Group {
+									history
+									function
+									if viewModel.building.funFacts.count > 0 {
+										trivia
+									}
+								}.padding(.top, -12)
+							})
+								
 		}
+		.edgesIgnoringSafeArea(.top)
 		.navigationBarTitle("\(viewModel.building.name)")
+		.navigationBarHidden(true)
 	}
 	
 	var buildingImageView: some View {
 		ZStack {
-			GeometryReader { g in
-				//TODO: Make a carousel
-				Image(viewModel.building.imageName)
-					.resizable()
-					.scaledToFill()
-					.frame(width: g.size.width, height: g.size.height)
-					.clipped()
-			}
-			gradient
+			carousel
 			VStack {
-				Spacer()
-				Text("\(viewModel.building.name)")
+				Text(viewModel.building.name)
+					.font(Font.custom("OpenSans-Regular", size: 18))
 					.foregroundColor(.listTextColor)
 					.padding()
+					.padding(.top, 22)
+				Spacer()
+			}
+			VStack {
+				HStack {
+					backButton
+						.font(Font.system(size: 20))
+						.padding()
+						.padding(.top, 26)
+					Spacer()
+				}
+				Spacer()
 			}
 		}
-		.frame(height: 146, alignment: .center)
-		.padding(.bottom, -8)
 	}
 	
 	var carousel: some View {
 		TabView(selection: $imageIndex,
 						content:  {
-							Text("")
-								.tabItem {
-									Text("Tab Label 1")
-								}.tag(1)
-							Text("")
-								.tabItem {
-									Text("Tab Label 2")
-								}.tag(2)
-						}).tabViewStyle(PageTabViewStyle())
+							ZStack {
+								WebImage(url: URL(string: viewModel.building.coverImagePath))
+									.resizable()
+									.scaledToFill()
+									.frame(height: 209)
+									.clipped()
+								gradient
+							}.tag(0)
+							
+							ForEach (viewModel.building.imagePaths, id: \.self) { path in
+								ZStack {
+									WebImage(url: URL(string: path))
+										.resizable()
+										.scaledToFill()
+										.frame(height: 209)
+										.clipped()
+									gradient
+								}
+								.tag(viewModel.building.imagePaths.firstIndex(of: path) ?? 0 + 1)
+							}
+						})
+			.tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+	}
+	
+	var gradient: some View {
+		LinearGradient(gradient: Gradient(colors: [.gradiant3, .gradiant2, .gradiant1, .gradiant0]), startPoint: .top, endPoint: .center)
+			.opacity(0.95)
 	}
 	
 	func carouselImage(at index: Int) -> AnyView {
@@ -70,17 +100,21 @@ struct BuildingDetailsView: View {
 		)
 	}
 	
-	var gradient: some View {
-		LinearGradient(gradient: Gradient(colors: [.gradiant3, .gradiant2, .gradiant1, .gradiant0]), startPoint: .bottom, endPoint: .center)
-			.opacity(0.95)
-	}
-	
 	var history: some View {
 		VStack {
 			BuildingSubtitleView(text: "History", color: Color.historyColor, textColor: Color.white)
 			Text(viewModel.building.history)
 				.frame(maxWidth: .infinity, alignment: .leading)
 				.padding()
+		}
+	}
+	
+	var backButton: some View {
+		Button {
+			self.presentationMode.wrappedValue.dismiss()
+		} label: {
+			Image(systemName: "arrow.backward")
+				.foregroundColor(.listTextColor)
 		}
 	}
 	
@@ -96,15 +130,42 @@ struct BuildingDetailsView: View {
 	var trivia: some View {
 		VStack {
 			BuildingSubtitleView(text: "Trivia", color: Color.triviaColor, textColor: Color.white)
-			Text(viewModel.building.funFacts)
-				.frame(maxWidth: .infinity, alignment: .leading)
-				.padding()
+			ForEach(viewModel.building.funFacts, id: \.self) { fact in
+				Text(fact)
+					.frame(maxWidth: .infinity, alignment: .leading)
+					.padding()
+			}
 		}
 	}
 }
 
-struct BuildingDetailsView_Previews: PreviewProvider {
-	static var previews: some View {
-		BuildingDetailsView(viewModel: BuildingDetailsViewModel(building: Building.debugBuilding()))
+struct carouselOverlay: ViewModifier {
+	
+	var text: String
+	
+	func body(content: Content) -> some View {
+		return contentWithOverlay(content: content)
+	}
+	
+	var overlay: some View {
+		ZStack {
+			VStack {
+				Text(text)
+					.font(Font.custom("OpenSans-Regular", size: 18))
+					.foregroundColor(.listTextColor)
+					.padding()
+					.padding(.top, 22)
+				Spacer()
+			}
+		}
+	}
+	
+	func contentWithOverlay(content: Content) -> AnyView {
+		AnyView(
+			ZStack {
+				content
+				self.overlay
+			}
+		)
 	}
 }
