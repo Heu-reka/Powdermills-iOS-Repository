@@ -16,6 +16,9 @@
 		B4275BBA24FB924E00739741 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4275BB924FB924E00739741 /* Preview Assets.xcassets */; };
 		B4275BC524FB924E00739741 /* PowdermillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BC424FB924E00739741 /* PowdermillsTests.swift */; };
 		B4275BD024FB924E00739741 /* PowdermillsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BCF24FB924E00739741 /* PowdermillsUITests.swift */; };
+		B445122F25D96F4C00B856A1 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B445122E25D96F4C00B856A1 /* MapAnnotation.swift */; };
+		B445123425D96F7400B856A1 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B445123325D96F7400B856A1 /* MapAnnotationView.swift */; };
+		B445129925D98B9500B856A1 /* MapAnnotationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B445129825D98B9500B856A1 /* MapAnnotationController.swift */; };
 		B455787325C343CE00EDEC14 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B455787225C343CE00EDEC14 /* OpenSans-Regular.ttf */; };
 		B455789025C3445900EDEC14 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B455788F25C3445900EDEC14 /* OpenSans-SemiBold.ttf */; };
 		B455789525C34A3B00EDEC14 /* BebasNeue Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B455789425C34A3B00EDEC14 /* BebasNeue Bold.ttf */; };
@@ -76,6 +79,9 @@
 		B4275BCB24FB924E00739741 /* PowdermillsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowdermillsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4275BCF24FB924E00739741 /* PowdermillsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowdermillsUITests.swift; sourceTree = "<group>"; };
 		B4275BD124FB924E00739741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B445122E25D96F4C00B856A1 /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		B445123325D96F7400B856A1 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		B445129825D98B9500B856A1 /* MapAnnotationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationController.swift; sourceTree = "<group>"; };
 		B455787225C343CE00EDEC14 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		B455788F25C3445900EDEC14 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		B455789425C34A3B00EDEC14 /* BebasNeue Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue Bold.ttf"; sourceTree = "<group>"; };
@@ -274,6 +280,9 @@
 			children = (
 				B4DCBD952559D7B30099D08A /* MapView.swift */,
 				B4DCBD9D2559D7E80099D08A /* ParkMapView.swift */,
+				B445122E25D96F4C00B856A1 /* MapAnnotation.swift */,
+				B445123325D96F7400B856A1 /* MapAnnotationView.swift */,
+				B445129825D98B9500B856A1 /* MapAnnotationController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -554,12 +563,15 @@
 				B4A98A6F250EC9990087F3E8 /* HomeViewModel.swift in Sources */,
 				B4275BB524FB924D00739741 /* ContentView.swift in Sources */,
 				B4AE0EB6257EA47800ED1962 /* BuildingSubtitleView.swift in Sources */,
+				B445122F25D96F4C00B856A1 /* MapAnnotation.swift in Sources */,
 				B418449B253CCE65008247B7 /* Colors.swift in Sources */,
 				C2BF6419252A791C0033DDDD /* TermsAndConditionsText.swift in Sources */,
 				B4A98A64250EC0850087F3E8 /* JSONBuilding.swift in Sources */,
 				B480817225BA23B600BDBB75 /* BuildingUploader.swift in Sources */,
 				B4A98A5F250EC04C0087F3E8 /* BuildingListView.swift in Sources */,
+				B445129925D98B9500B856A1 /* MapAnnotationController.swift in Sources */,
 				B4275BB324FB924D00739741 /* PowdermillsApp.swift in Sources */,
+				B445123425D96F7400B856A1 /* MapAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

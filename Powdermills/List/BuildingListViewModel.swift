@@ -38,9 +38,9 @@ class BuildingListViewModel: ObservableObject {
 		buildings = [FSBuilding]()
 		buildingViewModels = [BuildingListViewItemModel]()
 		
-		
-		BuildingUploader.sharedInstance.buildingsCollection.getDocuments { snapshot, error in
+		BuildingUploader.sharedInstance.buildingsCollection.order(by: "orders").getDocuments { snapshot, error in
 			if let allBuildings = snapshot?.documents {
+				
 				self.objectWillChange.send()
 				//clear
 				self.buildings.removeAll()

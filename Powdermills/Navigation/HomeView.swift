@@ -21,7 +21,7 @@ struct HomeView: View {
 			if viewModel.state == .list {
 				vstackMode
 			} else {
-				ParkMapView(viewModel: viewModel.listViewModel)
+				ParkMapView(buildingListViewModel: viewModel.listViewModel)
 					.navigationBarTitle("Map", displayMode: .inline)
 			}
 		}

@@ -1,5 +1,6 @@
 import SwiftUI
 import Mapbox
+import Combine
 
 extension MGLPointAnnotation {
 	convenience init(title: String, coordinate: CLLocationCoordinate2D) {
@@ -10,35 +11,28 @@ extension MGLPointAnnotation {
 }
 
 struct MapView: UIViewRepresentable {
-	@Binding var annotations: [MGLPointAnnotation]
 	
 	var viewModel: BuildingListViewModel
 	
 	private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
 	
 	// MARK: - Configuring UIViewRepresentable protocol
-	
 	func makeUIView(context: UIViewRepresentableContext<MapView>) -> MGLMapView {
 		mapView.delegate = context.coordinator
 		mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+		
 		if let styleURL = URL(string: "mapbox://styles/kevinmcgarry/ckhahij881umy19n08trhee74") {
 			mapView.styleURL = styleURL
 		}
 		mapView.showsUserLocation = true
-		
 		for building in viewModel.buildings {
-			let latitude = building.latitude
-			let longitude = building.longitude
-			let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
-			let point = MGLPointAnnotation(title: "", coordinate: coordinate)
-			
+			mapView.addAnnotation(BuildingAnnotation(building: building))
 		}
-		
 		return mapView
 	}
 	
 	func updateUIView(_ uiView: MGLMapView, context: UIViewRepresentableContext<MapView>) {
-		updateAnnotations()
+	
 	}
 	
 	func makeCoordinator() -> MapView.Coordinator {
@@ -62,13 +56,6 @@ struct MapView: UIViewRepresentable {
 		return self
 	}
 	
-	private func updateAnnotations() {
-		if let currentAnnotations = mapView.annotations {
-			mapView.removeAnnotations(currentAnnotations)
-		}
-		mapView.addAnnotations(annotations)
-	}
-	
 	// MARK: - Implementing MGLMapViewDelegate
 	
 	final class Coordinator: NSObject, MGLMapViewDelegate {
@@ -83,6 +70,10 @@ struct MapView: UIViewRepresentable {
 		}
 		
 		func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
+			if let buildingAnnotation = annotation as? BuildingAnnotation {
+				let annotationView = buildingAnnotation.viewForAnnotation()
+				return annotationView
+			}
 			return nil
 		}
 		
@@ -90,6 +81,11 @@ struct MapView: UIViewRepresentable {
 			return true
 		}
 		
+		func mapView(_ mapView: MGLMapView, didSelect annotationView: MGLAnnotationView) {
+			if let buildingAnnotation = annotationView.annotation as? BuildingAnnotation {
+				MapAnnotationController.sharedInstance.selectedAnnotation.send(buildingAnnotation.building.orders)
+			}
+		}
 	}
 	
 }
