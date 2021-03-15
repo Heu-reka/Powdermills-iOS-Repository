@@ -53,6 +53,7 @@ struct TermsAndConditionsView: View {
 					Button(action: {
 						self.agreed.toggle()
 						UserDefaults.standard.setValue(self.agreed, forKey: TermsAndConditionsView.ACCEPTED_TERMS)
+						UserDefaults.standard.synchronize()
 					}, label: {
 						HStack(alignment: .firstTextBaseline) {
 							Image(systemName: self.agreed ? "checkmark.square.fill" : "square")
