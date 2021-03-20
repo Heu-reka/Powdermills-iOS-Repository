@@ -54,6 +54,7 @@ struct TermsAndConditionsView: View {
 						self.agreed.toggle()
 						UserDefaults.standard.setValue(self.agreed, forKey: TermsAndConditionsView.ACCEPTED_TERMS)
 						UserDefaults.standard.synchronize()
+						PMLogger.sharedInstance.log(string: "Acceppted terms")
 					}, label: {
 						HStack(alignment: .firstTextBaseline) {
 							Image(systemName: self.agreed ? "checkmark.square.fill" : "square")

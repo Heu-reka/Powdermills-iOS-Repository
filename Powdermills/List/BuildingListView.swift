@@ -45,6 +45,7 @@ struct BuildingListViewItem: View {
 class BuildingListViewItemModel: Identifiable {
 	var building: FSBuilding
 	var detailsViewModel: BuildingDetailsViewModel
+	
 	var id: Int {
 		return building.orders
 	}

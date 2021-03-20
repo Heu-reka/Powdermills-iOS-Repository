@@ -17,8 +17,8 @@ struct BuildingDetailsView: View {
 		ZStack {
 			ScrollView {
 				Section(header:
-									buildingImageView
-										.frame(height: 209, alignment: .center),
+									carousel
+									.frame(height: 209, alignment: .center),
 								content: {
 									Group {
 										history
@@ -28,11 +28,12 @@ struct BuildingDetailsView: View {
 										}
 									}.padding(.top, -12)
 								})
-									
+				
 			}
 			.edgesIgnoringSafeArea(.top)
 			.navigationBarTitle("\(viewModel.building.name)")
 			.navigationBarHidden(true)
+			
 			VStack {
 				titleView
 					.frame(height: 64, alignment: .top)
@@ -46,7 +47,7 @@ struct BuildingDetailsView: View {
 		ZStack {
 			VStack {
 				Text(viewModel.building.name)
-					.font(Font.custom("OpenSans-Regular", size: 18))
+					.font(Font.buildingDetailsTitleFont)
 					.foregroundColor(.listTextColor)
 					.padding()
 					.padding(.top, 22)
@@ -55,37 +56,13 @@ struct BuildingDetailsView: View {
 			VStack {
 				HStack {
 					backButton
-						.font(Font.system(size: 20))
+						.font(Font.backButtonFont)
 						.padding()
 						.padding(.top, 26)
 					Spacer()
 				}
 				Spacer()
 			}
-		}
-	}
-	
-	var buildingImageView: some View {
-		ZStack {
-			carousel
-//			VStack {
-//				Text(viewModel.building.name)
-//					.font(Font.custom("OpenSans-Regular", size: 18))
-//					.foregroundColor(.listTextColor)
-//					.padding()
-//					.padding(.top, 22)
-//				Spacer()
-//			}
-//			VStack {
-//				HStack {
-//					backButton
-//						.font(Font.system(size: 20))
-//						.padding()
-//						.padding(.top, 26)
-//					Spacer()
-//				}
-//				Spacer()
-//			}
 		}
 	}
 	
@@ -157,36 +134,5 @@ struct BuildingDetailsView: View {
 					.padding()
 			}
 		}
-	}
-}
-
-struct carouselOverlay: ViewModifier {
-	
-	var text: String
-	
-	func body(content: Content) -> some View {
-		return contentWithOverlay(content: content)
-	}
-	
-	var overlay: some View {
-		ZStack {
-			VStack {
-				Text(text)
-					.font(Font.custom("OpenSans-Regular", size: 18))
-					.foregroundColor(.listTextColor)
-					.padding()
-					.padding(.top, 22)
-				Spacer()
-			}
-		}
-	}
-	
-	func contentWithOverlay(content: Content) -> AnyView {
-		AnyView(
-			ZStack {
-				content
-				self.overlay
-			}
-		)
 	}
 }

@@ -20,10 +20,8 @@ enum HomeState {
 		switch self {
 		case .list:
 			return "togglemap"
-//			return "map"
 		case .map:
 			return "togglelist"
-//			return "list.dash"
 		}
 	}
 	

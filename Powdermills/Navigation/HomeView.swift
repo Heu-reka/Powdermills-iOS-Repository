@@ -24,6 +24,8 @@ struct HomeView: View {
 				ParkMapView(buildingListViewModel: viewModel.listViewModel)
 					.navigationBarTitle("Map", displayMode: .inline)
 			}
+		}.onAppear {
+			viewModel.listViewModel.loadData()
 		}
 	}
 	
@@ -31,9 +33,9 @@ struct HomeView: View {
 		ZStack {
 			Color.titleBackgroundColor
 				.edgesIgnoringSafeArea(.all)
-				Text("POWDERMILLS")
-					.font(Font.custom("BebasNeue Bold", size: 30))
-					.foregroundColor(.titleTextColor)
+			Text("POWDERMILLS")
+				.font(Font.homeScreenTitleFont)
+				.foregroundColor(.titleTextColor)
 			HStack {
 				modeButton
 					.padding()
@@ -86,10 +88,11 @@ struct HomeView: View {
 	}
 	
 	var uploadBuildingsButton: some View {
-			Button("Upload all buildings") {
-				uploadedBuildings = true
-				BuildingUploader.sharedInstance.addJSONBuildingsToFirestore()
-			}.disabled(uploadedBuildings)
+		Button("Upload all buildings") {
+			uploadedBuildings = true
+			BuildingUploader.sharedInstance.addJSONBuildingsToFirestore()
+		}
+		.disabled(uploadedBuildings)
 	}
 }
 

@@ -93,3 +93,6 @@ iOSInjectionProject/
 
 # Mapbox keys
 .netrc
+
+# Firebase
+GoogleService-Info.plist
