@@ -19,9 +19,11 @@ enum HomeState {
 	func buttonImage() -> String {
 		switch self {
 		case .list:
-			return "map"
+			return "togglemap"
+//			return "map"
 		case .map:
-			return "list.dash"
+			return "togglelist"
+//			return "list.dash"
 		}
 	}
 	

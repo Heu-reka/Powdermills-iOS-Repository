@@ -8,9 +8,9 @@
 import Foundation
 
 class BuildingDetailsViewModel {
-	var building: Building
+	var building: FSBuilding
 	
-	init(building: Building) {
+	init(building: FSBuilding) {
 		self.building = building
 	}
 }

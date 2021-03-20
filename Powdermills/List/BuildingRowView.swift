@@ -6,52 +6,75 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct BuildingRowView: View {
-	var building: Building
+	var building: FSBuilding
 	
 	var body: some View {
-		HStack {
-			buildingImage
-			Spacer()
-			buildingText
-		}.padding(.vertical)
+		ZStack {
+			if building.coverImagePath != "" {
+				buildingImage
+			}
+			gradient
+			VStack {
+				Spacer()
+				HStack {
+					Text("\(building.name)")
+						.font(Font.custom("OpenSans-Regular", size: 16))
+						.foregroundColor(.listTextColor)
+						.padding(.trailing, 122)
+					Spacer()
+					chevron
+				}.padding()
+			}
+		}.frame(height: 146, alignment: .center)
+	}
+	
+	var gradient: some View {
+		LinearGradient(gradient: Gradient(colors: [.gradiant3, .gradiant2, .gradiant1, .gradiant0]), startPoint: .bottom, endPoint: .center)
+			.opacity(0.95)
+	}
+	
+	var chevron: some View {
+		Image(systemName: "chevron.right")
+			.resizable()
+			.aspectRatio(contentMode: ContentMode.fit)
+			.frame(width: 10, height: 10, alignment: .center)
+			.foregroundColor(.listTextColor)
 	}
 	
 	var buildingImage: some View {
-		ZStack {
-			Circle()
-				.foregroundColor(.secondary)
-				.frame(width: 81, height: 81, alignment: .center)
-				.shadow(radius: 2)
-			Image(building.imageName)
-				.resizable()
-				.aspectRatio(contentMode: ContentMode.fill)
-				.frame(width: 80, height: 80, alignment: .center)
-				.clipShape(Circle())
-		}
-	}
-	
-	var buildingText: some View {
-		VStack {
-			Text(building.name)
-				.font(.headline)
-				.frame(maxWidth: .infinity, alignment: .leading)
-			Text(building.short)
-				.frame(maxWidth: .infinity, alignment: .leading)
-		}
+		WebImage(url: URL(string: building.coverImagePath))
+			.resizable()
+			.scaledToFill()
+			.frame(height: 146)
+			.clipped()
 	}
 }
 
-struct BuildingRowView_Previews: PreviewProvider {
-	static var previews: some View {
-		List {
-			BuildingRowView(building: Building.debugBuilding())
-			BuildingRowView(building: Building.debugBuilding())
-			BuildingRowView(building: Building.debugBuilding())
-			BuildingRowView(building: Building.debugBuilding())
-			BuildingRowView(building: Building.debugBuilding())
-			
-		}.listStyle(DefaultListStyle())
-	}
-}
+//struct BuildingRowView_Previews: PreviewProvider {
+//	static var previews: some View {
+//		Group {
+//			ScrollView(.vertical) {
+//				LazyVStack(alignment: .center, spacing: 20, content: {
+//					BuildingRowView(building: FSBuilding.debugBuilding())
+//					BuildingRowView(building: FSBuilding.debugBuilding())
+//					BuildingRowView(building: FSBuilding.debugBuilding())
+//					BuildingRowView(building: FSBuilding.debugBuilding())
+//					BuildingRowView(building: FSBuilding.debugBuilding())
+//				})
+//				.padding()
+//			}
+//			
+//			List {
+//				BuildingRowView(building: FSBuilding.debugBuilding())
+//				BuildingRowView(building: FSBuilding.debugBuilding())
+//				BuildingRowView(building: FSBuilding.debugBuilding())
+//				BuildingRowView(building: FSBuilding.debugBuilding())
+//				BuildingRowView(building: FSBuilding.debugBuilding())
+//				
+//			}.listStyle(DefaultListStyle())
+//		}
+//	}
+//}

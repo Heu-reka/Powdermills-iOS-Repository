@@ -6,25 +6,51 @@
 //
 
 import SwiftUI
+import  Combine
 
 struct BuildingListView: View {
-	var viewModel = BuildingListViewModel()
+	@ObservedObject var viewModel: BuildingListViewModel
+	
 	var body: some View {
-		List {
-			ForEach(viewModel.buildings) { building in
-				NavigationLink(
-					destination:
-						BuildingDetailsView(viewModel: BuildingDetailsViewModel(building: building)),
-					label: {
-						BuildingRowView(building: building)
-					})
-			}
-		}.listStyle(PlainListStyle())
+		ScrollView(.vertical) {
+			LazyVStack(alignment: .center, spacing: 0, content: {
+				ForEach(viewModel.buildingViewModels) { viewModel in
+					BuildingListViewItem(viewModel: viewModel)
+				}
+			})
+		}
 	}
 }
 
 struct BuildingListView_Previews: PreviewProvider {
 	static var previews: some View {
-		BuildingListView()
+		BuildingListView(viewModel: BuildingListViewModel())
+	}
+}
+
+
+struct BuildingListViewItem: View {
+	var viewModel: BuildingListViewItemModel
+	
+	var body: some View {
+		NavigationLink(
+				destination:
+					BuildingDetailsView(viewModel: viewModel.detailsViewModel),
+				label: {
+					BuildingRowView(building: viewModel.building)
+				})
+	}
+}
+
+class BuildingListViewItemModel: Identifiable {
+	var building: FSBuilding
+	var detailsViewModel: BuildingDetailsViewModel
+	var id: Int {
+		return building.orders
+	}
+	
+	init(building: FSBuilding) {
+		self.building = building
+		self.detailsViewModel = BuildingDetailsViewModel(building: building)
 	}
 }
