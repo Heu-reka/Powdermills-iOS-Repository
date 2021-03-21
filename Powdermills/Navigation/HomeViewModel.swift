@@ -35,8 +35,15 @@ enum HomeState {
 	}
 }
 
+/// Home view model
 class HomeViewModel: ObservableObject {
+	
+	/// objectWillChange
 	var objectWillChange = PassthroughSubject<Void, Never>()
+	
+	/// Published `HomeState` set to list as default
 	@Published var state: HomeState = .list
+	 
+	/// BuildingListViewModel
 	var listViewModel: BuildingListViewModel = BuildingListViewModel()
 }

@@ -10,9 +10,14 @@ import FirebaseCore
 
 @main
 struct PowdermillsApp: App {
+	
+	/// App delegate
 	@UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+	
+	/// Flag for terms & conditions
 	@State var notAcceptedTerms: Bool = UserDefaults.standard.bool(forKey: TermsAndConditionsView.ACCEPTED_TERMS) != true
 	
+	/// Loading screen showing flag
 	@State var loading = true
 	
 	var body: some Scene {

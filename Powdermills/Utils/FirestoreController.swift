@@ -1,5 +1,5 @@
 //
-//  BuildingUploader.swift
+//  FirestoreController.swift
 //  Powdermills
 //
 //  Created by James Sadlier on 21/01/2021.
@@ -16,10 +16,10 @@ extension GeoPoint: GeoPointType {}
 extension FieldValue: FieldValueType {}
 extension Timestamp: TimestampType {}
 
-/// Service for interacting with Firestore
-public class BuildingUploader {
+/// Handles all Firestore interactions
+public class FirestoreController {
 	
-	public fileprivate(set) static var sharedInstance = BuildingUploader()
+	public fileprivate(set) static var sharedInstance = FirestoreController()
 	
 	/// The buildings collection path
 	private var buildingsPath: String {
@@ -42,7 +42,7 @@ public class BuildingUploader {
 	/// - Parameter fireStoreBuilding: The new building
 	private func addBuilding(fireStoreBuilding: FSBuilding ){
 		if let fireStoreBuildingJSON = fireStoreBuilding.dictionary() {
-			let doc = BuildingUploader.sharedInstance.buildingsCollection.addDocument(data: fireStoreBuildingJSON)
+			let doc = FirestoreController.sharedInstance.buildingsCollection.addDocument(data: fireStoreBuildingJSON)
 			PMLogger.sharedInstance.databaseLog.log("\("\(doc)", privacy: .private)")
 		}
 	}
@@ -54,7 +54,7 @@ public class BuildingUploader {
 				let jsonData = try Data(contentsOf: URL(fileURLWithPath: jsonPath))
 				let buildings = try JSONDecoder().decode([JSONBuilding].self, from: jsonData)
 				for building in buildings {
-					BuildingUploader.sharedInstance.addBuilding(fireStoreBuilding: building.firebaseBuilding())
+					FirestoreController.sharedInstance.addBuilding(fireStoreBuilding: building.firebaseBuilding())
 				}
 			} catch {
 				PMLogger.sharedInstance.databaseLog.log("Error loading buildings: \("\(error)", privacy: .private)")

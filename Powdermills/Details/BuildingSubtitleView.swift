@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Buildinig details subtitle
 struct BuildingSubtitleView: View {
 	var text: String
 	var color: Color
@@ -35,11 +36,22 @@ struct BuildingSubtitleView: View {
 
 struct BuildingSubtitleView_Previews: PreviewProvider {
 	static var previews: some View {
-		BuildingSubtitleView(text: "Hello, World!", color: Color.blue,textColor: Color.white)
+		VStack {
+			Spacer()
+			BuildingSubtitleView(text: "Title in green", color: Color.green, textColor: Color.white)
+			Spacer()
+			BuildingSubtitleView(text: "Title in blue", color: Color.blue, textColor: Color.white)
+			Spacer()
+			BuildingSubtitleView(text: "Title in green", color: Color.green, textColor: Color.black)
+			Spacer()
+			BuildingSubtitleView(text: "Title in blue", color: Color.blue, textColor: Color.black)
+			Spacer()
+		}
 	}
 }
 
 
+/// Triangle shape for building details subtitles
 struct Triangle: Shape {
 	func path(in rect: CGRect) -> Path {
 		var path = Path()

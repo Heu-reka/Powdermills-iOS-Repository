@@ -63,6 +63,8 @@ struct JSONBuilding: Codable {
 		iOSIcon = try values.decode(String.self, forKey: .iOSIcon)
 	}
 	
+	/// Generate a firebase version of this JSONBuilding
+	/// - Returns: A firebase representation of the building
 	func firebaseBuilding() -> FSBuilding {
 		FSBuilding(orders: Int(buildingOrder) ?? -1, name: name, history: shortHistory, function: function, funFacts: funFacts, coverImagePath: cover, imagePaths: images, latitude: lat, longitude: long, iconAndroid: androidIcon, iconiOS: iOSIcon)
 	}

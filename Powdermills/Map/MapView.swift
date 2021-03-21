@@ -3,6 +3,11 @@ import Mapbox
 import Combine
 
 extension MGLPointAnnotation {
+	
+	/// Convenience init
+	/// - Parameters:
+	///   - title: Annotation title
+	///   - coordinate: Annotation cooordinate
 	convenience init(title: String, coordinate: CLLocationCoordinate2D) {
 		self.init()
 		self.title = title
@@ -13,6 +18,8 @@ extension MGLPointAnnotation {
 struct MapView: UIViewRepresentable {
 	
 	var viewModel: BuildingListViewModel
+	
+	/// The mapbox style url
 	private static var mapURLString = "mapbox://styles/kevinmcgarry/ckhahij881umy19n08trhee74"
 	private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
 	
@@ -42,7 +49,6 @@ struct MapView: UIViewRepresentable {
 	}
 	
 	// MARK: - Configuring MGLMapView
-	
 	func styleURL(_ styleURL: URL) -> MapView {
 		mapView.styleURL = styleURL
 		return self
@@ -59,7 +65,6 @@ struct MapView: UIViewRepresentable {
 	}
 	
 	// MARK: - Implementing MGLMapViewDelegate
-	
 	final class Coordinator: NSObject, MGLMapViewDelegate {
 		var control: MapView
 		

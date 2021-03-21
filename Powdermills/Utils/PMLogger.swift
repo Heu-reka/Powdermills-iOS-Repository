@@ -9,6 +9,8 @@ import Foundation
 import os.log
 
 public class PMLogger {
+	
+	/// The app subsystem
 	private static var subsystem = Bundle.main.bundleIdentifier ?? "PowdermilsApp"
 	
 	/// The logger singleton instance

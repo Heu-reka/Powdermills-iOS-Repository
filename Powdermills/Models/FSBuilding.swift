@@ -29,6 +29,8 @@ public struct FSBuilding: Codable, Identifiable, Hashable {
 		orders
 	}
 	
+	/// Return a dictionary representation of the building
+	/// - Returns: an optional dictionary 
 	public func dictionary() -> [String: Any]? {
 		var dictionary: [String: Any]?
 		do {

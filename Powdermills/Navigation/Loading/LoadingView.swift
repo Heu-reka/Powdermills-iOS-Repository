@@ -16,6 +16,7 @@ struct LoadingView: View {
 			Image("croppedmill")
 				.resizable()
 				.aspectRatio(contentMode: ContentMode.fill)
+				.edgesIgnoringSafeArea(.all)
 			
 			Color.loadingTint
 				.edgesIgnoringSafeArea(.all)
@@ -47,6 +48,14 @@ struct LoadingView: View {
 
 struct LoadingView_Previews: PreviewProvider {
 	static var previews: some View {
-		LoadingView()
+		Group {
+			LoadingView()
+				.previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro"))
+				.previewDisplayName("iPhone 12 Pro")
+
+			LoadingView()
+				.previewDevice(PreviewDevice(rawValue: "iPhone 7"))
+				.previewDisplayName("iPhone 7")
+		}
 	}
 }

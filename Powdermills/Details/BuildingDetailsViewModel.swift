@@ -8,6 +8,8 @@
 import Foundation
 
 class BuildingDetailsViewModel {
+	
+	/// Firestore building
 	var building: FSBuilding
 	
 	init(building: FSBuilding) {

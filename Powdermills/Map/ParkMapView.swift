@@ -11,26 +11,29 @@ import Combine
 
 struct ParkMapView: View {
 	
+	/// View model of buildings list
 	@ObservedObject var buildingListViewModel: BuildingListViewModel
+	
+	/// View model for map view
 	@ObservedObject var viewModel = ParkMapViewModel()
 	
 	var body: some View {
 		VStack {
 			NavigationLink(
-				destination: building() ,
+				destination: buildingDetailsView() ,
 				isActive: $viewModel.showingDetails,
 				label: {
 					EmptyView()
 				})
 			MapView(viewModel: buildingListViewModel)
-				.centerCoordinate(.init(latitude: 51.893782, longitude: -8.590463)).zoomLevel(16)
+				.centerCoordinate(ParkMapViewModel.parkCenterPoint).zoomLevel(16)
 				.edgesIgnoringSafeArea(.vertical)
 		}.onAppear {
 			viewModel.showingDetails = false
 		}
 	}
 	
-	func building() -> AnyView {
+	func buildingDetailsView() -> AnyView {
 		guard let selecetdBuilding = buildingListViewModel.buildings.filter({$0.orders == viewModel.buildingOrders}).first else {
 			return AnyView(EmptyView())
 		}
@@ -43,19 +46,3 @@ struct ParkMapView_Previews: PreviewProvider {
 		ParkMapView(buildingListViewModel: BuildingListViewModel())
 	}
 }
- 
-public class ParkMapViewModel: ObservableObject {
-	public var objectWillChange = PassthroughSubject<Void, Never>()
-	@Published var showingDetails = false
-	private var annotationWatch: AnyCancellable?
-	@Published var buildingOrders: Int = -1
-	
-	init() {
-		annotationWatch = MapAnnotationController.sharedInstance.selectedAnnotation.sink { [weak self] buildingOrders in
-			self?.objectWillChange.send()
-			self?.buildingOrders = buildingOrders
-			self?.showingDetails = true
-		}
-	}
-}
-

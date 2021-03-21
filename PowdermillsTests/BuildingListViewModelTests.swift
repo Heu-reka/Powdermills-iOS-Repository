@@ -28,10 +28,10 @@ class BuildingListViewModelTests: XCTestCase {
 	}
 	
 	override func tearDownWithError() throws {
-		// Put teardown code here. This method is called after the invocation of each test method in the class.
+		
 	}
 	
-	func testLoadBuildings() throws {
+	func testLoadBuildingsCount() throws {
 		XCTAssert(viewModel.buildings.count > 0)
 	}
 	

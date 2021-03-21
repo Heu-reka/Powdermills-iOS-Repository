@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		14CAC3D500FBA48705574EB1 /* Pods_Powdermills_PowdermillsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDAFAB896D4F7B51ABC99A /* Pods_Powdermills_PowdermillsUITests.framework */; };
 		79446276C6DD470E73526BC3 /* Pods_Powdermills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF24C9167A25251D2322E8E /* Pods_Powdermills.framework */; };
+		B413DEE42607914B00EB8903 /* ParkMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B413DEE32607914B00EB8903 /* ParkMapViewModel.swift */; };
+		B413DEED2607998E00EB8903 /* BuildingListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B413DEEC2607998E00EB8903 /* BuildingListItemViewModel.swift */; };
+		B413DEF2260799A200EB8903 /* BuildingListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B413DEF1260799A200EB8903 /* BuildingListItemView.swift */; };
 		B418449B253CCE65008247B7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418449A253CCE65008247B7 /* Colors.swift */; };
 		B4245ACB26064A3400D1249D /* PMLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4245ACA26064A3400D1249D /* PMLogger.swift */; };
 		B4275BB324FB924D00739741 /* PowdermillsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BB224FB924D00739741 /* PowdermillsApp.swift */; };
 		B4275BB524FB924D00739741 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BB424FB924D00739741 /* ContentView.swift */; };
 		B4275BB724FB924E00739741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4275BB624FB924E00739741 /* Assets.xcassets */; };
 		B4275BBA24FB924E00739741 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4275BB924FB924E00739741 /* Preview Assets.xcassets */; };
-		B4275BC524FB924E00739741 /* PowdermillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BC424FB924E00739741 /* PowdermillsTests.swift */; };
 		B4275BD024FB924E00739741 /* PowdermillsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4275BCF24FB924E00739741 /* PowdermillsUITests.swift */; };
 		B445122F25D96F4C00B856A1 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B445122E25D96F4C00B856A1 /* MapAnnotation.swift */; };
 		B445123425D96F7400B856A1 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B445123325D96F7400B856A1 /* MapAnnotationView.swift */; };
@@ -25,7 +27,7 @@
 		B455789525C34A3B00EDEC14 /* BebasNeue Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B455789425C34A3B00EDEC14 /* BebasNeue Bold.ttf */; };
 		B469D3F3250FDBBE00DA919C /* BuildingDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469D3F2250FDBBE00DA919C /* BuildingDetailsView.swift */; };
 		B469D3F5250FDBCC00DA919C /* BuildingDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469D3F4250FDBCC00DA919C /* BuildingDetailsViewModel.swift */; };
-		B480817225BA23B600BDBB75 /* BuildingUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480817125BA23B600BDBB75 /* BuildingUploader.swift */; };
+		B480817225BA23B600BDBB75 /* FirestoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480817125BA23B600BDBB75 /* FirestoreController.swift */; };
 		B4A3929125FFDB12003FAAE4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A3929025FFDB12003FAAE4 /* LoadingView.swift */; };
 		B4A3929925FFE039003FAAE4 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4A3929825FFE039003FAAE4 /* loading.gif */; };
 		B4A98A5F250EC04C0087F3E8 /* BuildingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A5E250EC04C0087F3E8 /* BuildingListView.swift */; };
@@ -72,6 +74,9 @@
 		6529B1828D42B208762D27EE /* Pods-Powdermills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Powdermills.release.xcconfig"; path = "Target Support Files/Pods-Powdermills/Pods-Powdermills.release.xcconfig"; sourceTree = "<group>"; };
 		888A7CB8CCD4A86D01F2633B /* Pods-PowdermillsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowdermillsTests.release.xcconfig"; path = "Target Support Files/Pods-PowdermillsTests/Pods-PowdermillsTests.release.xcconfig"; sourceTree = "<group>"; };
 		9A37678B4D1BDB0C2A50C038 /* Pods-Powdermills-PowdermillsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Powdermills-PowdermillsUITests.release.xcconfig"; path = "Target Support Files/Pods-Powdermills-PowdermillsUITests/Pods-Powdermills-PowdermillsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B413DEE32607914B00EB8903 /* ParkMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapViewModel.swift; sourceTree = "<group>"; };
+		B413DEEC2607998E00EB8903 /* BuildingListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingListItemViewModel.swift; sourceTree = "<group>"; };
+		B413DEF1260799A200EB8903 /* BuildingListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingListItemView.swift; sourceTree = "<group>"; };
 		B418449A253CCE65008247B7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B4245ACA26064A3400D1249D /* PMLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMLogger.swift; sourceTree = "<group>"; };
 		B4275BAF24FB924D00739741 /* Powdermills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Powdermills.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +86,6 @@
 		B4275BB924FB924E00739741 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4275BBB24FB924E00739741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4275BC024FB924E00739741 /* PowdermillsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowdermillsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4275BC424FB924E00739741 /* PowdermillsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowdermillsTests.swift; sourceTree = "<group>"; };
 		B4275BC624FB924E00739741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4275BCB24FB924E00739741 /* PowdermillsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowdermillsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4275BCF24FB924E00739741 /* PowdermillsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowdermillsUITests.swift; sourceTree = "<group>"; };
@@ -94,7 +98,7 @@
 		B455789425C34A3B00EDEC14 /* BebasNeue Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue Bold.ttf"; sourceTree = "<group>"; };
 		B469D3F2250FDBBE00DA919C /* BuildingDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDetailsView.swift; sourceTree = "<group>"; };
 		B469D3F4250FDBCC00DA919C /* BuildingDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDetailsViewModel.swift; sourceTree = "<group>"; };
-		B480817125BA23B600BDBB75 /* BuildingUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingUploader.swift; sourceTree = "<group>"; };
+		B480817125BA23B600BDBB75 /* FirestoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreController.swift; sourceTree = "<group>"; };
 		B4A3929025FFDB12003FAAE4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		B4A3929825FFE039003FAAE4 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = loading.gif; path = ../../../../Downloads/loading.gif; sourceTree = "<group>"; };
 		B4A98A5E250EC04C0087F3E8 /* BuildingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingListView.swift; sourceTree = "<group>"; };
@@ -217,7 +221,6 @@
 		B4275BC324FB924E00739741 /* PowdermillsTests */ = {
 			isa = PBXGroup;
 			children = (
-				B4275BC424FB924E00739741 /* PowdermillsTests.swift */,
 				B4275BC624FB924E00739741 /* Info.plist */,
 				B4A98A67250EC2DB0087F3E8 /* BuildingListViewModelTests.swift */,
 				B4EA50C326066AB30016EF37 /* BuildingTests.swift */,
@@ -258,7 +261,7 @@
 		B480817025BA23A900BDBB75 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B480817125BA23B600BDBB75 /* BuildingUploader.swift */,
+				B480817125BA23B600BDBB75 /* FirestoreController.swift */,
 				B4245ACA26064A3400D1249D /* PMLogger.swift */,
 			);
 			path = Utils;
@@ -278,6 +281,8 @@
 				B4A98A5E250EC04C0087F3E8 /* BuildingListView.swift */,
 				B4A98A60250EC0650087F3E8 /* BuildingListViewModel.swift */,
 				B4A98A69250EC5FC0087F3E8 /* BuildingRowView.swift */,
+				B413DEEC2607998E00EB8903 /* BuildingListItemViewModel.swift */,
+				B413DEF1260799A200EB8903 /* BuildingListItemView.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 			children = (
 				B4DCBD952559D7B30099D08A /* MapView.swift */,
 				B4DCBD9D2559D7E80099D08A /* ParkMapView.swift */,
+				B413DEE32607914B00EB8903 /* ParkMapViewModel.swift */,
 				B445122E25D96F4C00B856A1 /* MapAnnotation.swift */,
 				B445123325D96F7400B856A1 /* MapAnnotationView.swift */,
 				B445129825D98B9500B856A1 /* MapAnnotationController.swift */,
@@ -589,6 +595,8 @@
 				B4DCBD9E2559D7E80099D08A /* ParkMapView.swift in Sources */,
 				B4A98A6A250EC5FC0087F3E8 /* BuildingRowView.swift in Sources */,
 				B469D3F3250FDBBE00DA919C /* BuildingDetailsView.swift in Sources */,
+				B413DEF2260799A200EB8903 /* BuildingListItemView.swift in Sources */,
+				B413DEE42607914B00EB8903 /* ParkMapViewModel.swift in Sources */,
 				B4A98A6F250EC9990087F3E8 /* HomeViewModel.swift in Sources */,
 				B4275BB524FB924D00739741 /* ContentView.swift in Sources */,
 				B4AE0EB6257EA47800ED1962 /* BuildingSubtitleView.swift in Sources */,
@@ -597,8 +605,9 @@
 				B418449B253CCE65008247B7 /* Colors.swift in Sources */,
 				C2BF6419252A791C0033DDDD /* TermsAndConditionsText.swift in Sources */,
 				B4A98A64250EC0850087F3E8 /* JSONBuilding.swift in Sources */,
-				B480817225BA23B600BDBB75 /* BuildingUploader.swift in Sources */,
+				B480817225BA23B600BDBB75 /* FirestoreController.swift in Sources */,
 				B4A98A5F250EC04C0087F3E8 /* BuildingListView.swift in Sources */,
+				B413DEED2607998E00EB8903 /* BuildingListItemViewModel.swift in Sources */,
 				B4EA50C926066AD10016EF37 /* FSBuilding.swift in Sources */,
 				B445129925D98B9500B856A1 /* MapAnnotationController.swift in Sources */,
 				B4275BB324FB924D00739741 /* PowdermillsApp.swift in Sources */,
@@ -611,7 +620,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4EA50C426066AB30016EF37 /* BuildingTests.swift in Sources */,
-				B4275BC524FB924E00739741 /* PowdermillsTests.swift in Sources */,
 				B4A98A68250EC2DB0087F3E8 /* BuildingListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

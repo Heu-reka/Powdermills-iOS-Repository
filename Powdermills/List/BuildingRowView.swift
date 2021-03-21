@@ -52,6 +52,7 @@ struct BuildingRowView: View {
 			.clipped()
 	}
 }
+
 #if DEBUG
 struct BuildingRowView_Previews: PreviewProvider {
 	static var previews: some View {
