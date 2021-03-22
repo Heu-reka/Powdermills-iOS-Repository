@@ -34,10 +34,10 @@ struct ParkMapView: View {
 	}
 	
 	func buildingDetailsView() -> AnyView {
-		guard let selecetdBuilding = buildingListViewModel.buildings.filter({$0.orders == viewModel.buildingOrders}).first else {
+		guard let selectedBuldling = buildingListViewModel.buildings.first(where: {$0.orders == viewModel.buildingOrders}) else {
 			return AnyView(EmptyView())
 		}
-		return AnyView(BuildingDetailsView(viewModel: BuildingDetailsViewModel(building: selecetdBuilding)))
+		return AnyView(BuildingDetailsView(viewModel: BuildingDetailsViewModel(building: selectedBuldling)))
 	}
 }
 

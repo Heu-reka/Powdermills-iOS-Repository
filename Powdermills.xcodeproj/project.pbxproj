@@ -29,7 +29,6 @@
 		B469D3F5250FDBCC00DA919C /* BuildingDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469D3F4250FDBCC00DA919C /* BuildingDetailsViewModel.swift */; };
 		B480817225BA23B600BDBB75 /* FirestoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480817125BA23B600BDBB75 /* FirestoreController.swift */; };
 		B4A3929125FFDB12003FAAE4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A3929025FFDB12003FAAE4 /* LoadingView.swift */; };
-		B4A3929925FFE039003FAAE4 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4A3929825FFE039003FAAE4 /* loading.gif */; };
 		B4A98A5F250EC04C0087F3E8 /* BuildingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A5E250EC04C0087F3E8 /* BuildingListView.swift */; };
 		B4A98A61250EC0650087F3E8 /* BuildingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A60250EC0650087F3E8 /* BuildingListViewModel.swift */; };
 		B4A98A64250EC0850087F3E8 /* JSONBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A98A63250EC0850087F3E8 /* JSONBuilding.swift */; };
@@ -41,6 +40,7 @@
 		B4AE0EB6257EA47800ED1962 /* BuildingSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE0EB5257EA47800ED1962 /* BuildingSubtitleView.swift */; };
 		B4AE4B5525BA123600D62BF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4AE4B5425BA123600D62BF0 /* GoogleService-Info.plist */; };
 		B4C43D9E0002F5459E4E6C3F /* Pods_PowdermillsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F4CD6FD790EF97C6647D33 /* Pods_PowdermillsTests.framework */; };
+		B4D3718A2608FF15006E670F /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4D371892608FF15006E670F /* loading.gif */; };
 		B4DCBD962559D7B30099D08A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCBD952559D7B30099D08A /* MapView.swift */; };
 		B4DCBD9E2559D7E80099D08A /* ParkMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCBD9D2559D7E80099D08A /* ParkMapView.swift */; };
 		B4EA50C426066AB30016EF37 /* BuildingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA50C326066AB30016EF37 /* BuildingTests.swift */; };
@@ -100,7 +100,6 @@
 		B469D3F4250FDBCC00DA919C /* BuildingDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDetailsViewModel.swift; sourceTree = "<group>"; };
 		B480817125BA23B600BDBB75 /* FirestoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreController.swift; sourceTree = "<group>"; };
 		B4A3929025FFDB12003FAAE4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		B4A3929825FFE039003FAAE4 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = loading.gif; path = ../../../../Downloads/loading.gif; sourceTree = "<group>"; };
 		B4A98A5E250EC04C0087F3E8 /* BuildingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingListView.swift; sourceTree = "<group>"; };
 		B4A98A60250EC0650087F3E8 /* BuildingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingListViewModel.swift; sourceTree = "<group>"; };
 		B4A98A63250EC0850087F3E8 /* JSONBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBuilding.swift; sourceTree = "<group>"; };
@@ -111,6 +110,7 @@
 		B4A98A6E250EC9990087F3E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B4AE0EB5257EA47800ED1962 /* BuildingSubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingSubtitleView.swift; sourceTree = "<group>"; };
 		B4AE4B5425BA123600D62BF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B4D371892608FF15006E670F /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		B4DCBD952559D7B30099D08A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B4DCBD9D2559D7E80099D08A /* ParkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapView.swift; sourceTree = "<group>"; };
 		B4EA50C326066AB30016EF37 /* BuildingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingTests.swift; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 				B4275BB224FB924D00739741 /* PowdermillsApp.swift */,
 				B4275BB424FB924D00739741 /* ContentView.swift */,
 				B4275BB624FB924E00739741 /* Assets.xcassets */,
-				B4A3929825FFE039003FAAE4 /* loading.gif */,
+				B4D371892608FF15006E670F /* loading.gif */,
 				C23BA8DC2550A597002EE7F4 /* terms-and-conditions.txt */,
 				B4A98A65250EC1BC0087F3E8 /* buildings.json */,
 				B4275BBB24FB924E00739741 /* Info.plist */,
@@ -455,7 +455,7 @@
 				B455789025C3445900EDEC14 /* OpenSans-SemiBold.ttf in Resources */,
 				B4AE4B5525BA123600D62BF0 /* GoogleService-Info.plist in Resources */,
 				B4A98A66250EC1BC0087F3E8 /* buildings.json in Resources */,
-				B4A3929925FFE039003FAAE4 /* loading.gif in Resources */,
+				B4D3718A2608FF15006E670F /* loading.gif in Resources */,
 				B455787325C343CE00EDEC14 /* OpenSans-Regular.ttf in Resources */,
 				B4275BB724FB924E00739741 /* Assets.xcassets in Resources */,
 			);
