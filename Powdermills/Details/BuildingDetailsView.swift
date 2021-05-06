@@ -78,7 +78,7 @@ struct BuildingDetailsView: View {
 										.clipped()
 									gradient
 								}
-								.tag(viewModel.building.imagePaths.firstIndex(of: path))
+                .tag(viewModel.building.imagePaths.firstIndex(of: path) ?? 0)
 							}
 						})
 			.tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
