@@ -20,10 +20,8 @@ enum HomeState {
 		switch self {
 		case .list:
 			return "togglemap"
-//			return "map"
 		case .map:
 			return "togglelist"
-//			return "list.dash"
 		}
 	}
 	
@@ -37,8 +35,15 @@ enum HomeState {
 	}
 }
 
+/// Home view model
 class HomeViewModel: ObservableObject {
+	
+	/// objectWillChange
 	var objectWillChange = PassthroughSubject<Void, Never>()
+	
+	/// Published `HomeState` set to list as default
 	@Published var state: HomeState = .list
+	 
+	/// BuildingListViewModel
 	var listViewModel: BuildingListViewModel = BuildingListViewModel()
 }

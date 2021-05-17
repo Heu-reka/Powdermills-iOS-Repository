@@ -1,2 +1,3 @@
-# Powdermill-Team
-General information about the team people and other useful resources
+# Powdermills-iOS-Repository
+
+Repository for the iOS version of Powdermills

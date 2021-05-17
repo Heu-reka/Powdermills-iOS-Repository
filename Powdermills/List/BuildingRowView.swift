@@ -21,7 +21,7 @@ struct BuildingRowView: View {
 				Spacer()
 				HStack {
 					Text("\(building.name)")
-						.font(Font.custom("OpenSans-Regular", size: 16))
+						.font(Font.buildingListTitleFont)
 						.foregroundColor(.listTextColor)
 						.padding(.trailing, 122)
 					Spacer()
@@ -53,28 +53,33 @@ struct BuildingRowView: View {
 	}
 }
 
-//struct BuildingRowView_Previews: PreviewProvider {
-//	static var previews: some View {
-//		Group {
-//			ScrollView(.vertical) {
-//				LazyVStack(alignment: .center, spacing: 20, content: {
-//					BuildingRowView(building: FSBuilding.debugBuilding())
-//					BuildingRowView(building: FSBuilding.debugBuilding())
-//					BuildingRowView(building: FSBuilding.debugBuilding())
-//					BuildingRowView(building: FSBuilding.debugBuilding())
-//					BuildingRowView(building: FSBuilding.debugBuilding())
-//				})
-//				.padding()
-//			}
-//			
-//			List {
-//				BuildingRowView(building: FSBuilding.debugBuilding())
-//				BuildingRowView(building: FSBuilding.debugBuilding())
-//				BuildingRowView(building: FSBuilding.debugBuilding())
-//				BuildingRowView(building: FSBuilding.debugBuilding())
-//				BuildingRowView(building: FSBuilding.debugBuilding())
-//				
-//			}.listStyle(DefaultListStyle())
-//		}
-//	}
-//}
+#if DEBUG
+struct BuildingRowView_Previews: PreviewProvider {
+	static var previews: some View {
+		Group {
+			ScrollView(.vertical) {
+				LazyVStack(alignment: .center, spacing: 20, content: {
+					BuildingRowView(building: FSBuilding.debugBuilding())
+					BuildingRowView(building: FSBuilding.debugBuilding())
+					BuildingRowView(building: FSBuilding.debugBuilding())
+					BuildingRowView(building: FSBuilding.debugBuilding())
+					BuildingRowView(building: FSBuilding.debugBuilding())
+				})
+				.padding()
+			}
+			.environment(\.colorScheme, .light)
+			
+			List {
+				BuildingRowView(building: FSBuilding.debugBuilding())
+				BuildingRowView(building: FSBuilding.debugBuilding())
+				BuildingRowView(building: FSBuilding.debugBuilding())
+				BuildingRowView(building: FSBuilding.debugBuilding())
+				BuildingRowView(building: FSBuilding.debugBuilding())
+				
+			}
+			.listStyle(DefaultListStyle())
+			.environment(\.colorScheme, .dark)
+		}
+	}
+}
+#endif

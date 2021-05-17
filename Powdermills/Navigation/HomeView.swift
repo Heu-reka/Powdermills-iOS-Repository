@@ -9,21 +9,24 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct HomeView: View {
+	
+	/// The home view model
 	@ObservedObject var viewModel = HomeViewModel()
 	
-	@State var showTermsAndConditions = false
-	
+	/// Flag to stop mulitple uploads of buildings. Only used when app is in upload mode
 	@State var uploadedBuildings = false
 	
 	var body: some View {
 		VStack {
 			headerView
 			if viewModel.state == .list {
-				vstackMode
+				buildingListView
 			} else {
 				ParkMapView(buildingListViewModel: viewModel.listViewModel)
 					.navigationBarTitle("Map", displayMode: .inline)
 			}
+		}.onAppear {
+			viewModel.listViewModel.loadData()
 		}
 	}
 	
@@ -31,9 +34,9 @@ struct HomeView: View {
 		ZStack {
 			Color.titleBackgroundColor
 				.edgesIgnoringSafeArea(.all)
-				Text("POWDERMILLS")
-					.font(Font.custom("BebasNeue Bold", size: 30))
-					.foregroundColor(.titleTextColor)
+			Text("POWDERMILLS")
+				.font(Font.homeScreenTitleFont)
+				.foregroundColor(.titleTextColor)
 			HStack {
 				modeButton
 					.padding()
@@ -41,11 +44,11 @@ struct HomeView: View {
 				Spacer()
 			}
 			
-		}.frame(height: 48, alignment: .center)
-		
+		}
+		.frame(height: 48, alignment: .center)
 	}
 	
-	var vstackMode: some View {
+	var buildingListView: some View {
 		VStack {
 			BuildingListView(viewModel: viewModel.listViewModel)
 				.navigationBarTitle(viewModel.state.modeTitle(), displayMode: .inline)
@@ -75,21 +78,13 @@ struct HomeView: View {
 		}
 	}
 	
-	var termsAndConditionButton: some View {
-		Button(action: {
-			self.showTermsAndConditions = true
-		}) {
-			Image(systemName: "scroll")
-		}.fullScreenCover(isPresented: self.$showTermsAndConditions, content: {
-			TermsAndConditionsView()
-		})
-	}
-	
+	/// Only used in upload mode
 	var uploadBuildingsButton: some View {
-			Button("Upload all buildings") {
-				uploadedBuildings = true
-				BuildingUploader.sharedInstance.addJSONBuildingsToFirestore()
-			}.disabled(uploadedBuildings)
+		Button("Upload all buildings") {
+			uploadedBuildings = true
+			FirestoreController.sharedInstance.addJSONBuildingsToFirestore()
+		}
+		.disabled(uploadedBuildings)
 	}
 }
 

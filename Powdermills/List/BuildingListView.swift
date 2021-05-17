@@ -15,7 +15,7 @@ struct BuildingListView: View {
 		ScrollView(.vertical) {
 			LazyVStack(alignment: .center, spacing: 0, content: {
 				ForEach(viewModel.buildingViewModels) { viewModel in
-					BuildingListViewItem(viewModel: viewModel)
+					BuildingListItemView(viewModel: viewModel)
 				}
 			})
 		}
@@ -29,28 +29,3 @@ struct BuildingListView_Previews: PreviewProvider {
 }
 
 
-struct BuildingListViewItem: View {
-	var viewModel: BuildingListViewItemModel
-	
-	var body: some View {
-		NavigationLink(
-				destination:
-					BuildingDetailsView(viewModel: viewModel.detailsViewModel),
-				label: {
-					BuildingRowView(building: viewModel.building)
-				})
-	}
-}
-
-class BuildingListViewItemModel: Identifiable {
-	var building: FSBuilding
-	var detailsViewModel: BuildingDetailsViewModel
-	var id: Int {
-		return building.orders
-	}
-	
-	init(building: FSBuilding) {
-		self.building = building
-		self.detailsViewModel = BuildingDetailsViewModel(building: building)
-	}
-}

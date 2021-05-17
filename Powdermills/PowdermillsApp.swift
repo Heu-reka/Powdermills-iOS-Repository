@@ -10,15 +10,31 @@ import FirebaseCore
 
 @main
 struct PowdermillsApp: App {
+	
+	/// App delegate
 	@UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+	
+	/// Flag for terms & conditions
 	@State var notAcceptedTerms: Bool = UserDefaults.standard.bool(forKey: TermsAndConditionsView.ACCEPTED_TERMS) != true
+	
+	/// Loading screen showing flag
+	@State var loading = true
 	
 	var body: some Scene {
 		WindowGroup {
-			ContentView()
-				.fullScreenCover(isPresented: $notAcceptedTerms, content: {
-					TermsAndConditionsView()
-				})
+			if loading {
+				LoadingView()
+					.onAppear {
+						DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.1) {
+							loading = false
+						}
+					}
+			} else {
+				ContentView()
+					.fullScreenCover(isPresented: $notAcceptedTerms, content: {
+						TermsAndConditionsView()
+					})
+			}
 		}
 	}
 }

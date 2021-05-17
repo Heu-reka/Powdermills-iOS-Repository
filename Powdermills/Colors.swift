@@ -25,4 +25,7 @@ extension Color {
 	public static let triviaColor = Color("TriviaColor")
 	public static let historyColor = Color("HistoryColor")
 	public static let functionColor = Color("FunctionColor")
+	
+	public static let loadingTint = Color("LoadingTintColor")
+	
 }

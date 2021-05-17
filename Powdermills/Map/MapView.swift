@@ -3,6 +3,11 @@ import Mapbox
 import Combine
 
 extension MGLPointAnnotation {
+	
+	/// Convenience init
+	/// - Parameters:
+	///   - title: Annotation title
+	///   - coordinate: Annotation cooordinate
 	convenience init(title: String, coordinate: CLLocationCoordinate2D) {
 		self.init()
 		self.title = title
@@ -14,6 +19,8 @@ struct MapView: UIViewRepresentable {
 	
 	var viewModel: BuildingListViewModel
 	
+	/// The mapbox style url
+	private static var mapURLString = "mapbox://styles/kevinmcgarry/ckhahij881umy19n08trhee74"
 	private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
 	
 	// MARK: - Configuring UIViewRepresentable protocol
@@ -21,8 +28,10 @@ struct MapView: UIViewRepresentable {
 		mapView.delegate = context.coordinator
 		mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 		
-		if let styleURL = URL(string: "mapbox://styles/kevinmcgarry/ckhahij881umy19n08trhee74") {
+		if let styleURL = URL(string: Self.mapURLString) {
 			mapView.styleURL = styleURL
+		} else {
+			PMLogger.sharedInstance.mapLog.error("\("Failed to load map url", privacy: .public) \(Self.mapURLString, privacy: .private)")
 		}
 		mapView.showsUserLocation = true
 		for building in viewModel.buildings {
@@ -40,7 +49,6 @@ struct MapView: UIViewRepresentable {
 	}
 	
 	// MARK: - Configuring MGLMapView
-	
 	func styleURL(_ styleURL: URL) -> MapView {
 		mapView.styleURL = styleURL
 		return self
@@ -57,7 +65,6 @@ struct MapView: UIViewRepresentable {
 	}
 	
 	// MARK: - Implementing MGLMapViewDelegate
-	
 	final class Coordinator: NSObject, MGLMapViewDelegate {
 		var control: MapView
 		
@@ -66,7 +73,7 @@ struct MapView: UIViewRepresentable {
 		}
 		
 		func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
-			
+			PMLogger.sharedInstance.mapLog.log("View Loaded")
 		}
 		
 		func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
