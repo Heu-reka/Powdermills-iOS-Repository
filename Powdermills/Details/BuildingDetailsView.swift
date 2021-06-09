@@ -30,13 +30,12 @@ struct BuildingDetailsView: View {
 								})
 				
 			}
-			.edgesIgnoringSafeArea(.top)
-			.navigationBarTitle("\(viewModel.building.name)")
+			.edgesIgnoringSafeArea(.top)      .navigationBarTitle("")
 			.navigationBarHidden(true)
 			
 			VStack {
 				titleView
-					.frame(height: 64, alignment: .top)
+          .frame(minHeight: 64, maxHeight: 128, alignment: .top)
 					.padding(.top, -40)
 				Spacer()
 			}
@@ -47,10 +46,12 @@ struct BuildingDetailsView: View {
 		ZStack {
 			VStack {
 				Text(viewModel.building.name)
+          .lineLimit(2)
 					.font(Font.buildingDetailsTitleFont)
 					.foregroundColor(.listTextColor)
 					.padding()
 					.padding(.top, 22)
+          .padding(.horizontal, 26)
 				Spacer()
 			}
 			VStack {

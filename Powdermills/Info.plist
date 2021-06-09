@@ -20,6 +20,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1Ijoia2V2aW5tY2dhcnJ5IiwiYSI6ImNraGFoaG56cjFjbnkzMGwybWozeTBlYXMifQ.m_uliyq42bjqqpuMj3dlmA</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To guide you around the park</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OpenSans-Regular.ttf</string>
+		<string>OpenSans-SemiBold.ttf</string>
+		<string>BebasNeue Bold.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -48,16 +58,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1Ijoia2V2aW5tY2dhcnJ5IiwiYSI6ImNraGFoaG56cjFjbnkzMGwybWozeTBlYXMifQ.m_uliyq42bjqqpuMj3dlmA</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>To guide you around the park</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>OpenSans-Regular.ttf</string>
-		<string>OpenSans-SemiBold.ttf</string>
-		<string>BebasNeue Bold.ttf</string>
 	</array>
 </dict>
 </plist>
